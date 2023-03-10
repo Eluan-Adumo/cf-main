@@ -12,7 +12,12 @@ import Testimonies from './Pages/Testimonies';
 import Team from './Pages/Team';
 import Contact from './Pages/Contact';
 import Navbar from './Components/Headers';
+import { useEffect } from 'react';
 function App() {
+  const {pathname} =useLocation()
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[pathname])
   return (
     <BrowserRouter>
       <Navbar />

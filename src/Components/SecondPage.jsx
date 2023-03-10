@@ -16,7 +16,7 @@ const SecondPage = ()=>{
 
                     </div>
                     <div className = 'page-two-highlight'>
-                            <h1>Complete Website Security</h1>
+                            <h1>What we do</h1>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Doloribus quam neque quibusdam corrupti aspernatur

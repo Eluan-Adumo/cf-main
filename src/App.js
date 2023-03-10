@@ -17,9 +17,10 @@ function App() {
   const {pathname} =useLocation()
   useEffect(() => {
     window.scrollTo(0,0)
-  },[pathname])
+  },[pathname]);
   return (
-    <BrowserRouter>
+    
+   <>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -29,7 +30,8 @@ function App() {
         <Route path='/team' element={<Team />} />
         <Route path='/contactus' element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+   </>
+    
   );
 }
 

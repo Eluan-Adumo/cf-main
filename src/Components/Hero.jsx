@@ -32,7 +32,7 @@ const Hero = () =>{
                     </span>
                     <span className = 'hero-left-bottom'>
                     Careful Watchers offers comprehensive cyber 
-                    security solutions to help Businesses, 
+                    security services to help Businesses, 
                     Organizations and Individuals protect 
                     themselves from digital threats.                    </span>
                     <span className = 'hero-left-buttons'>

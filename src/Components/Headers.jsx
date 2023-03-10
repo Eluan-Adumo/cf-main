@@ -29,7 +29,9 @@ const Navbar = () => {
         showMobileNav={showMobileNav}
       />
       <div className = 'dyn-header'>
-          <DynamicHeader />
+          <DynamicHeader  
+           setShowMobileNav={setShowMobileNav}
+           showMobileNav={showMobileNav}/>
       </div>
     </nav>
 
@@ -148,6 +150,8 @@ const HeaderNav = ({ setShowMobileNav }) => {
 };
 
 const DynamicHeader = ({ setShowMobileNav, showMobileNav }) => {
+  console.log(setShowMobileNav);
+  const [showN, setShowN] = useState(false);
   const [itemHeight, setHeight] = useState(null);
   const [isVisible, setVisible] = useState(false);
   useEffect(() => {
@@ -185,14 +189,14 @@ const DynamicHeader = ({ setShowMobileNav, showMobileNav }) => {
 
   };
 
-  const toggleMenu = () => {
-    let item = document.querySelector('.mobile-navigation');
-    if (item.style.display == 'none') {
-      item.style.display = 'block';
-    } else {
-      item.style.display = 'none';
-    }
-  };
+  // const toggleMenu = () => {
+  //   let item = document.querySelector('.mobile-navigation');
+  //   if (item.style.display == 'none') {
+  //     item.style.display = 'block';
+  //   } else {
+  //     item.style.display = 'none';
+  //   }
+  // };
 
   return (
     <>
@@ -216,15 +220,22 @@ const DynamicHeader = ({ setShowMobileNav, showMobileNav }) => {
              <Link to='/'><img src = {logo} className = 'logo' /></Link>
            </div>
 
-           <button onClick={() => setShowMobileNav(!showMobileNav)} className='mob-btn'>
+           
+           
+           <div className = 'button-area'>
+           <button onClick={() => {
+            setShowN(!showN);
+             }}
+              className='mob-btn'>
              <span className='bars bar11'></span>
              <span className='bars bar12'></span>
              <span className='bars bar13'></span>
            </button>
+            </div>
 
-           <nav className='mobile-navigation' 
-           style={{ display: showMobileNav ? `block` : `none` }}>
-        <HeaderNav setShowMobileNav={setShowMobileNav} />
+           <nav className='mobile-navigation' id = 'mob-nav' 
+           style={{ display: showN ? `block` : `none` }}>
+        <HeaderNav setShowMobileNav={setShowN} />
       </nav>
          </div>
  

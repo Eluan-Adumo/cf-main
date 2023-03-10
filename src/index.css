@@ -1925,7 +1925,10 @@ footer {
     top: 20px;
     z-index: 900;
   }
-
+#mob-nav{
+  position: absolute;
+  top: 60px;
+}
   .mobile-navigation ul {
     display: grid;
     grid-template-columns: auto;
@@ -2362,8 +2365,10 @@ footer {
   }
 
   .logo{
-    width: 80px;
-    height: 30px;
+    max-width: 50px;
+    border: 0px solid white;
+    display: block;
+    margin-left: 10px;
   }
 }
 

@@ -1138,6 +1138,42 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+  .dynamic-header-pc {
+    display: grid;
+    grid-template-columns: 15% 50% 35%;
+    column-gap: 5%;
+    width: 100%;
+    height: 60px;
+    background: #11132d;
+    z-index: 1000;
+    position: fixed;
+    padding-bottom: 10px;
+    top: 0;
+    margin-top : -60px;
+    transition : all 0.5s ease;
+  }
+  
+  .dynamic-header-pc .logo{
+    max-width: 70px;
+  }
+
+  .dynamic-header-pc ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    list-style-type: none;
+    column-gap: 10px;
+    line-height: 50px;
+  }
+  .dynamic-header-pc .end-nav{
+    margin: 10px auto;
+  
+  }
+
+  .dynamic-header-pc .end-nav .quote-btn{
+    width: 100px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
   .cf-logo{
     max-width: 70px;
     margin-top: 20px;
@@ -1768,9 +1804,7 @@ footer {
     border-radius: 5px;
   }
 
-  .dynamic-header-pc {
-    display: none;
-  }
+
 
   .dynamic-header-mobile {
     display: grid;
@@ -1783,6 +1817,7 @@ footer {
     width: 100vw;
     top: 0px;
     z-index: 1000;
+    margin-top: -60px;
   }
   .third-div {
     display: block;
@@ -2320,6 +2355,15 @@ footer {
   .cf-logo{
     max-width: 70px;
     margin-top: -10px;
+  }
+
+  .dynamic-header-pc{
+    display: none;
+  }
+
+  .logo{
+    width: 80px;
+    height: 30px;
   }
 }
 

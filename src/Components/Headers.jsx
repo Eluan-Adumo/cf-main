@@ -28,7 +28,11 @@ const Navbar = () => {
         setShowMobileNav={setShowMobileNav}
         showMobileNav={showMobileNav}
       />
+      <div className = 'dyn-header'>
+          <DynamicHeader />
+      </div>
     </nav>
+
   );
 };
 
@@ -90,7 +94,7 @@ const BiggerHeader = ({ setShowMobileNav, showMobileNav }) => {
           <div className='nav-pc'>
             <HeaderNav />
           </div>
-          <button onClick={() => setShowMobileNav(true)} className='mob-btn'>
+          <button onClick={() => setShowMobileNav(!showMobileNav)} className='mob-btn'>
             <span className='bars bar11'></span>
             <span className='bars bar12'></span>
             <span className='bars bar13'></span>
@@ -101,10 +105,7 @@ const BiggerHeader = ({ setShowMobileNav, showMobileNav }) => {
         </div>
       </nav>
 
-      <nav
-        className='mobile-navigation'
-        style={{ display: showMobileNav ? `block` : `none` }}
-      >
+      <nav className='mobile-navigation' style={{ display: showMobileNav ? `block` : `none` }}>
         <HeaderNav setShowMobileNav={setShowMobileNav} />
       </nav>
 
@@ -146,7 +147,7 @@ const HeaderNav = ({ setShowMobileNav }) => {
   );
 };
 
-const DynamicHeader = () => {
+const DynamicHeader = ({ setShowMobileNav, showMobileNav }) => {
   const [itemHeight, setHeight] = useState(null);
   const [isVisible, setVisible] = useState(false);
   useEffect(() => {
@@ -154,19 +155,39 @@ const DynamicHeader = () => {
     return () => window.removeEventListener('scroll', listenScroll);
   }, []);
   const listenScroll = () => {
+    const d = document;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
     setHeight(winScroll);
-    if (itemHeight > 500) {
-      setVisible(true);
-    } else {
-      !isVisible && setVisible(false);
-    }
+    if (winScroll >= 500) {
+          
+          if(window.innerWidth >=600){
+            d.querySelector(".dynamic-header-pc").style.marginTop = "0px";
+            d.querySelector(".dynamic-header-mobile").style.display = "none";
+          } else {
+            d.querySelector(".dynamic-header-pc").style.display = "none";
+            d.querySelector(".dynamic-header-mobile").style.marginTop = "0px";
+            
+          }
+
+      }else{
+          
+        if(window.innerWidth >=600){
+          d.querySelector(".dynamic-header-pc").style.marginTop = "-60px";
+          d.querySelector(".dynamic-header-mobile").style.display = "none";
+        } else {
+          d.querySelector(".dynamic-header-pc").style.display = "none";
+          d.querySelector(".dynamic-header-mobile").style.marginTop = "-60px";
+          
+        }
+
+        }
+
   };
 
   const toggleMenu = () => {
     let item = document.querySelector('.mobile-navigation');
-    if (item.style.display === 'none') {
+    if (item.style.display == 'none') {
       item.style.display = 'block';
     } else {
       item.style.display = 'none';
@@ -175,35 +196,38 @@ const DynamicHeader = () => {
 
   return (
     <>
-      {isVisible && (
-        // <nav className = 'dynamic-header-pc'>
-        // <div className = 'left-nav'>
-        // <Link to = '/'>CAREFUL WATCHERS</Link>
-        // </div>
-        // <div className = 'right-nav'>
-        //     <HeaderNav />
-        // </div>
-        // <div className = 'end-nav'>
-        //     <input type = 'button' value = 'Get A Quote' className = 'quote-btn' />
-        // </div>
-        // </nav>
 
-        <div className='dynamic-header-mobile'>
-          <div className='left-nav'>
-            <Link to='/'>CAREFUL WATCHERS</Link>
-          </div>
-
-          <button onClick={toggleMenu} className='mob-btn'>
-            <span className='bars bar11'></span>
-            <span className='bars bar12'></span>
-            <span className='bars bar13'></span>
-          </button>
-
-          <nav className='mobile-navigation'>
-            <HeaderNav />
-          </nav>
+        <nav className = 'dynamic-header-pc'>
+        <div className = 'left-nav'>
+        <Link to = '/'>
+          <img src = {logo} className = 'logo' />
+        </Link>
         </div>
-      )}
+        <div className = 'right-nav'>
+            <HeaderNav />
+        </div>
+        <div className = 'end-nav'>
+            <input type = 'button' value = 'Get A Quote' className = 'quote-btn' />
+        </div>
+        </nav>
+
+         <div className='dynamic-header-mobile'>
+           <div className='left-nav'>
+             <Link to='/'><img src = {logo} className = 'logo' /></Link>
+           </div>
+
+           <button onClick={() => setShowMobileNav(!showMobileNav)} className='mob-btn'>
+             <span className='bars bar11'></span>
+             <span className='bars bar12'></span>
+             <span className='bars bar13'></span>
+           </button>
+
+           <nav className='mobile-navigation' 
+           style={{ display: showMobileNav ? `block` : `none` }}>
+        <HeaderNav setShowMobileNav={setShowMobileNav} />
+      </nav>
+         </div>
+ 
     </>
   );
 };

@@ -150,7 +150,7 @@ const HeaderNav = ({ setShowMobileNav }) => {
 };
 
 const DynamicHeader = ({ setShowMobileNav, showMobileNav }) => {
-  console.log(setShowMobileNav);
+  // console.log(setShowMobileNav);
   const [showN, setShowN] = useState(false);
   const [itemHeight, setHeight] = useState(null);
   const [isVisible, setVisible] = useState(false);

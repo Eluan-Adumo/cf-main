@@ -277,14 +277,6 @@ button {
   float: left;
 }
 
-.page-two-highlight {
-  display: block;
-  width: 60%;
-  margin: 0px auto;
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
 
 .page-two-highlight h1 {
   font-family: "bold";
@@ -694,14 +686,7 @@ footer {
   background: white;
 }
 
-.pricing-headline {
-  display: block;
-  width: 60%;
-  margin: 0px auto;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
+
 
 .pricing-headline h1 {
   display: block;
@@ -788,13 +773,7 @@ footer {
   margin-bottom: 5%;
 }
 
-.testimonies-headline {
-  display: block;
-  width: 70%;
-  margin: 0px auto;
-  margin-bottom: 3%;
-  text-align: center;
-}
+
 
 .testimonies-headline h1 {
   font-weight: bolder;
@@ -892,12 +871,7 @@ footer {
   margin-top: 5%;
   margin-bottom: 5%;
 }
-.team-headline {
-  display: block;
-  width: 60%;
-  margin: 0px auto;
-  text-align: center;
-}
+
 
 .team-headline h1 {
   font-weight: bolder;
@@ -1138,6 +1112,39 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+  .testimonies-headline {
+    display: block;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 3%;
+    text-align: center;
+  }
+  
+  .pricing-headline {
+    display: block;
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .team-headline {
+    display: block;
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  .page-two-highlight {
+    display: block;
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
+  
   .dynamic-header-pc {
     display: grid;
     grid-template-columns: 15% 50% 35%;
@@ -1712,6 +1719,38 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .testimonies-headline {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 3%;
+    text-align: center;
+  }
+
+  .pricing-headline {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .team-headline {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  
+  .page-two-highlight {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  
   .page-two-content {
     width: 100%;
     margin: 0px auto;

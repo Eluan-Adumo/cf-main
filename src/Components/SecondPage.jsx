@@ -317,7 +317,7 @@ const ThirdDiv = ()=>{
 
 
                       <div className = 'page-two-highlight'>
-                            <h1>What we do</h1>
+                            <h1>About Us</h1>
                         <p>
                         At Careful Watchers, we have a unique quirk that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach.
 

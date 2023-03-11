@@ -290,6 +290,7 @@ button {
   line-height: 27px;
   text-align: center;
   font-family: 'Roboto-Light';
+  margin-bottom: 20px;
 }
 
 .area-right img {
@@ -1112,6 +1113,9 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+  .dynamic-header-mobile{
+    display: none;
+  }
   .testimonies-headline {
     display: block;
     width: 70%;

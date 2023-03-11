@@ -25,7 +25,7 @@ const Hero = () =>{
                 
                 <div className = 'hero-left'>
                     <span className = 'hero-left-top'>
-                        The surest protection on the web
+                        Careful Watchers (CaaS)
                     </span>
                     <span className = 'hero-left-mid'>
                     PROTECTING YOUR BUSINESS STARTS WITH SECURING YOUR DIGITAL ASSETS
@@ -34,7 +34,8 @@ const Hero = () =>{
                     Careful Watchers offers comprehensive cyber 
                     security services to help Businesses, 
                     Organizations and Individuals protect 
-                    themselves from digital threats.                    </span>
+                    themselves from digital threats.                    
+                    </span>
                     <span className = 'hero-left-buttons'>
                         <input type = 'button' className = 'g-started' value = 'Get Started' />
                         <input type = 'button' value = 'About us' className = 'abt-us' />

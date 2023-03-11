@@ -64,6 +64,37 @@ footer a {
   color: white;
   text-decoration: none;
 }
+.g-quote{
+  display: block;
+  float: left;
+  width: 100vw;
+  min-height: 100vw;
+}
+
+.g-quote-content{
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.quotations{
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 20px;
+}
+
+.quotations input{
+  min-height: 40px;
+  padding: 2%;
+  width: 90%;
+  margin: 0px auto;
+}
+
+/* @media screen and(max-width: 600px) {
+  .quotations input{
+
+  }  
+} */
 .anim-btn {
   display: block;
   background: crimson;
@@ -1852,11 +1883,11 @@ footer {
   .dynamic-header-mobile {
     display: grid;
     position: fixed;
-    grid-template-columns: 80% 10%;
+    grid-template-columns: 30% 40% 20%;
     column-gap: 5%;
     background: #25245e;
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 0%;
     width: 100vw;
     top: 0px;
     z-index: 1000;
@@ -2408,11 +2439,14 @@ footer {
   }
 
   .logo{
-    max-width: 50px;
+    margin-top: -15px;
+    max-width: 70px;
     border: 0px solid white;
     display: block;
     margin-left: 10px;
   }
+
+  
 }
 
 

@@ -13,6 +13,7 @@ import Team from './Pages/Team';
 import Contact from './Pages/Contact';
 import Navbar from './Components/Headers';
 import { useEffect } from 'react';
+import GetQuote from './Pages/GetQuote';
 function App() {
   const {pathname} =useLocation()
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
         <Route path='/testimonies' element={<Testimonies />} />
         <Route path='/team' element={<Team />} />
         <Route path='/contactus' element={<Contact />} />
+        <Route path='/getquote' element={<GetQuote />} />
       </Routes>
    </>
     

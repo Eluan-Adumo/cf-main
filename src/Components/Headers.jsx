@@ -211,7 +211,9 @@ const DynamicHeader = ({ setShowMobileNav, showMobileNav }) => {
             <HeaderNav />
         </div>
         <div className = 'end-nav'>
-            <input type = 'button' value = 'Get A Quote' className = 'quote-btn' />
+            <Link to = '/getquote'>
+              <input type = 'button' value = 'Get A Quote' className = 'quote-btn' />
+            </Link>
         </div>
         </nav>
 
@@ -220,7 +222,13 @@ const DynamicHeader = ({ setShowMobileNav, showMobileNav }) => {
              <Link to='/'><img src = {logo} className = 'logo' /></Link>
            </div>
 
-           
+          <div>
+
+           <Link to = '/getquote'>
+            <input type = 'button' value = 'Get A Quote' className = 'quote-btn' />
+            </Link>
+
+          </div>
            
            <div className = 'button-area'>
            <button onClick={() => {

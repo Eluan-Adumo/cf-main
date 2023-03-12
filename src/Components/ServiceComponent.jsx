@@ -15,7 +15,11 @@ const ServiceComponent = () =>{
     return (
 
         <>
-            <SmallHero title = 'Our Services' />
+            <section className = 'small-hero' id = 'serv'>
+                <section className = 'small-hero-content'>
+                    <h1 className = 'small-hero-title'>Our Services</h1>
+                </section>
+            </section>
             <section className = 'service-page'>
                 <section className = 'service-page-content'>
                     <div className = 'page-two-highlight'>

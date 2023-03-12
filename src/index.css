@@ -2571,3 +2571,11 @@ footer {
   outline: none;
   margin-top: 10px;
 }
+
+
+#serv{
+  background-image: url("resources/images/skills-dark.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}

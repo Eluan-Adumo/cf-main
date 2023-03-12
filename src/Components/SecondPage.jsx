@@ -9,21 +9,45 @@ import watcher from "../resources/images/approach-img-1-1-1.jpg";
 import Testimonials from './Testimonials'
 import { Link } from 'react-router-dom'
 import {MdKeyboardDoubleArrowRight} from "react-icons/md"
+import {motion} from "framer-motion";
 const SecondPage = ()=>{
+    
     return(
         <>
+        {/* <motion.section className = 'contact-div'
+            initial = {{
+                    width: 0
+                }}
+                animate = {{
+                    width: "100vw"
+                }}  
+                
+                exit = {{
+
+                }}
+            ></motion.section> */}
             <section className = 'page-two'>
                 <section className = 'page-two-content'>
                     <div className = 'page-two-slider'>
 
                     </div>
-                    <div className = 'page-two-highlight'>
+                    <motion.div className = 'page-two-highlight'
+                    initial = {{
+                        marginLeft: "-50%"
+                    }}
+                    animate = {{
+                        marginLeft: "0%"
+                    }}  
+                    
+                    exit = {{
+        
+                    }}
+                    >
                             <h1>What we do</h1>
                         <p>
 At Careful Watchers, we have a unique quirk that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach (CaaS).
-
                         </p>
-                    </div>
+                    </motion.div>
                     <div className = 'page-two-cards'>
                         <ul>
                             <li>

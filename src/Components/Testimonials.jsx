@@ -4,6 +4,7 @@ import {AiFillStar} from "react-icons/ai"
 import test1 from "../resources/images/client1-1-1-1-1.jpg";
 import hacker from "../resources/images/hacker_1-1-1-1-1.jpg";
 import {BsFillCheckSquareFill} from "react-icons/bs";
+
 const Testimonials = ()=>{
     return (
 
@@ -21,7 +22,7 @@ const Testimonials = ()=>{
 
                 <div className = 'testimonials-main-area'>
                     <ul>
-                        <li>
+                        {/* <li>
                             <div className = 'each-test'>
                                
                                 <div className = 'each-test-main'>
@@ -51,9 +52,9 @@ const Testimonials = ()=>{
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> */}
 
-                        <li>
+                        {/* <li>
                             <div className = 'each-test'>
                                 <div className = 'each-test-main'>
                                  <center><span className = 'quots'><ImQuotesLeft /></span></center>
@@ -79,7 +80,7 @@ const Testimonials = ()=>{
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> */}
 
                         <li>
                             <div className = 'each-test'>
@@ -165,7 +166,7 @@ const Testimonials = ()=>{
                             </div>
                         </li>
 
-                        <li>
+                        {/* <li>
                             <div className = 'each-test'>
                                 <div className = 'each-test-main'>
                                 <center><span className = 'quots'><ImQuotesLeft /></span></center>
@@ -191,7 +192,7 @@ const Testimonials = ()=>{
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </section>

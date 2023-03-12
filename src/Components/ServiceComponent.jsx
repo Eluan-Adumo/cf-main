@@ -2,6 +2,12 @@ import React from "react";
 import Footer from "./Footer";
 import SmallHero from "./SmallHero";
 import {MdOutlineSecurity}  from "react-icons/md";
+import {RiSkull2Fill, RiCustomerService2Fill} from "react-icons/ri"
+import {MdNetworkLocked}  from "react-icons/md"
+import {SiMicrosoftaccess} from "react-icons/si"
+import {HiBriefcase} from "react-icons/hi"
+import {CgWebsite} from "react-icons/cg"
+import { Link } from "react-router-dom";
 
 
 const ServiceComponent = () =>{
@@ -14,11 +20,24 @@ const ServiceComponent = () =>{
                 <section className = 'service-page-content'>
                     <div className = 'page-two-highlight'>
                         <center>
-                            <span className = 's-icons-side'>
-                            <MdOutlineSecurity />
-                            </span>
-                            
+                            <div  style = {{
+                                display: "block",
+                                width: "40px",
+                                height: "40px",
+                                background: "crimson",
+                                color: "white",
+                                border: "0px solid white",
+                                borderRadius: "25px",
+                                textAlign: "center",
+                                marginTop: "130px",
+                                fontSize: "25px",
+                                lineHeight: "45px"
+                            }}>
+                            <HiBriefcase />
+                            </div>
                         </center>
+
+
 
                         <h1>
                             Security Consulting
@@ -27,13 +46,21 @@ const ServiceComponent = () =>{
                         <p>
                         Careful Watchers Consulting service Identifies problems,
 evaluates security issues, assesses risk, and implements solutions to address
-threats to a Clients computer networks and computer system
+threats to a Clients computer networks and computer system.
+<br />
+<center>
+<Link to = '/getquote'>
+              <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
+</Link>
+</center>
                         </p>
 
+                    </div>
 
+<div className = 'page-two-highlight'>
                         <center>
                             <span className = 's-icons-side'>
-                            <MdOutlineSecurity />
+                            <RiSkull2Fill />
                             </span>
                             
                         </center>
@@ -44,13 +71,21 @@ threats to a Clients computer networks and computer system
 
                         <p>
                         Careful Watchers will assess Client's IT infrastructure and
-identify vulnerabilities and risks
-                        </p>.
+identify vulnerabilities and risks.
+<br />
+<center>
+<Link to = '/getquote'>
+              <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
+</Link>
+</center>
+                        </p>
+</div>
 
+<div className = 'page-two-highlight'>
 
                         <center>
                             <span className = 's-icons-side'>
-                            <MdOutlineSecurity />
+                            <MdNetworkLocked />
                             </span>
                             
                         </center>
@@ -63,11 +98,20 @@ identify vulnerabilities and risks
                         Careful Watchers will configure firewalls, intrusion detection
 and prevention systems to protect Client's network from external and internal
 threats.
+<br />
+<center>
+<Link to = '/getquote'>
+              <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
+</Link>
+</center>
                         </p>
+</div>
 
+
+<div className = 'page-two-highlight'>
                         <center>
                             <span className = 's-icons-side'>
-                            <MdOutlineSecurity />
+                            <RiCustomerService2Fill />
                             </span>
                             
                         </center>
@@ -78,13 +122,23 @@ threats.
                         <p>
                         Careful Watchers will provide 24/7 incident response services
 to mitigate the impact of any cyber security incidents that may occur.
+<br />
+<center>
+<Link to = '/getquote'>
+              <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
+</Link>
+</center>
                         </p>
+</div>
 
+
+
+<div className = 'page-two-highlight'>
 
 
                         <center>
                             <span className = 's-icons-side'>
-                            <MdOutlineSecurity />
+                            <SiMicrosoftaccess />
                             </span>
                             
                         </center>
@@ -95,11 +149,21 @@ to mitigate the impact of any cyber security incidents that may occur.
                         <p>
                         Careful Watchers will provide 24/7 incident response services
 to mitigate the impact of any cyber security incidents that may occur.
+<br />
+<center>
+<Link to = '/getquote'>
+              <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
+</Link>
+</center>
                         </p>
+
+                        </div>
+
+                        <div className = 'page-two-highlight'>
 
                         <center>
                             <span className = 's-icons-side'>
-                            <MdOutlineSecurity />
+                            <CgWebsite />
                             </span>
                             
                         </center>
@@ -111,8 +175,17 @@ to mitigate the impact of any cyber security incidents that may occur.
                         Careful Watchers is develops and implement an
 organization's information security policies, procedures, and best practices to protect its
 sensitive information assets.
+<br />
+<center>
+<Link to = '/getquote'>
+              <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
+</Link>
+</center>
                         </p>
+</div>
 
+
+<div className = 'page-two-highlight'>
 
                         <center>
                             <span className = 's-icons-side'>
@@ -129,6 +202,12 @@ sensitive information assets.
                         Careful Watchers is develops and implement an
 organization's information security policies, procedures, and best practices to protect its
 sensitive information assets.
+<br />
+<center>
+<Link to = '/getquote'>
+              <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
+</Link>
+</center>
                         </p>
 
 

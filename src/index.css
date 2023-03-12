@@ -2536,7 +2536,7 @@ footer {
   .list-content-side h2{
     font-family: "bold";
   }
-.dark-div-left{
+.dark-div-left, .right-fourth{
   display: none;
 }
   

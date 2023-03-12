@@ -9,8 +9,8 @@ const About = () => {
     <>
       <SmallHero title='About' />
       <ThirdDiv />
-      <DarkDiv />
-      <Testimonials />
+      {/* <DarkDiv />
+      <Testimonials /> */}
       <Footer />
     </>
   );

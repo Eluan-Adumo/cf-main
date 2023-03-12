@@ -134,7 +134,7 @@ const HeaderNav = ({ setShowMobileNav }) => {
           <Link to='/team'>Team</Link>
         </li>
         <li onClick={handleClick}>
-          <Link to='/pricing'>Pricing</Link>
+          <Link to='/Services'>Services</Link>
         </li>
 
         <li onClick={handleClick}>

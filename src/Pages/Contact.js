@@ -43,7 +43,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className='s-address'>
+          {/* <div className='s-address'>
             <div className='add-content'>
               <center>
                 <p className='add-loc'>
@@ -71,7 +71,7 @@ const Contact = () => {
                 ></iframe>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
         <section className='contact-lower'>
           <div className='cl-content'>

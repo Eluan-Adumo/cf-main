@@ -32,16 +32,16 @@ const SecondPage = ()=>{
 
                     </div>
                     <motion.div className = 'page-two-highlight'
-                    initial = {{
-                        marginLeft: "-50%"
-                    }}
-                    animate = {{
-                        marginLeft: "0%"
-                    }}  
+                    // initial = {{
+                    //     marginLeft: "-50%"
+                    // }}
+                    // animate = {{
+                    //     marginLeft: "0%"
+                    // }}  
                     
-                    exit = {{
+                    // exit = {{
         
-                    }}
+                    // }}
                     >
                             <h1>What we do</h1>
                         <p>

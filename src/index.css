@@ -228,6 +228,7 @@ button {
   position: absolute;
   font-weight: bolder;
   font-size: 150%;
+  font-family: "bold";
   animation: animatedBtn2 1s infinite;
 }
 
@@ -691,6 +692,7 @@ footer {
   color: white;
   font-size: 30px;
   text-align: center;
+  font-family: "bold";
 }
 
 .pricing-main {
@@ -2301,6 +2303,7 @@ footer {
     color: #11132d;
     margin-bottom: 10px;
     font-size: 120%;
+    font-family: "bold";
   }
   .grid-content-area-content p {
     font-family: 'Roboto-Light';

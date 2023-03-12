@@ -47,18 +47,18 @@ const ServiceComponent = () =>{
                             Security Consulting
                         </h1>
 
-                        <p>
+                        <p className = 'frame-box'>
                         Careful Watchers Consulting service Identifies problems,
 evaluates security issues, assesses risk, and implements solutions to address
 threats to a Clients computer networks and computer system.
-<br />
+
+                        </p>
+                       
 <center>
 <Link to = '/getquote'>
               <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
 </Link>
 </center>
-                        </p>
-
                     </div>
 
 <div className = 'page-two-highlight'>
@@ -73,7 +73,7 @@ threats to a Clients computer networks and computer system.
                            Risk Assessment
                         </h1>
 
-                        <p>
+                        <p className = 'frame-box'>
                         Careful Watchers will assess Client's IT infrastructure and
 identify vulnerabilities and risks.
 <br />
@@ -98,17 +98,18 @@ identify vulnerabilities and risks.
                             Network Security
                         </h1>
 
-                        <p>
+                        <p className = 'frame-box'>
                         Careful Watchers will configure firewalls, intrusion detection
 and prevention systems to protect Client's network from external and internal
 threats.
 <br />
-<center>
+
+                        </p>
+                        <center>
 <Link to = '/getquote'>
               <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
 </Link>
 </center>
-                        </p>
 </div>
 
 
@@ -123,16 +124,17 @@ threats.
                             Incident Response
                         </h1>
 
-                        <p>
+                        <p className = 'frame-box'>
                         Careful Watchers will provide 24/7 incident response services
 to mitigate the impact of any cyber security incidents that may occur.
 <br />
-<center>
+
+                        </p>
+                        <center>
 <Link to = '/getquote'>
               <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
 </Link>
 </center>
-                        </p>
 </div>
 
 
@@ -150,16 +152,17 @@ to mitigate the impact of any cyber security incidents that may occur.
                             Service Awareness Training
                         </h1>
 
-                        <p>
+                        <p className = 'frame-box'>
                         Careful Watchers will provide 24/7 incident response services
 to mitigate the impact of any cyber security incidents that may occur.
 <br />
-<center>
+
+                        </p>
+                        <center>
 <Link to = '/getquote'>
               <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
 </Link>
 </center>
-                        </p>
 
                         </div>
 
@@ -175,17 +178,18 @@ to mitigate the impact of any cyber security incidents that may occur.
                             Business Information Security
                         </h1>
 
-                        <p>
+                        <p className = 'frame-box'>
                         Careful Watchers is develops and implement an
 organization's information security policies, procedures, and best practices to protect its
 sensitive information assets.
 <br />
-<center>
+
+                        </p>
+                        <center>
 <Link to = '/getquote'>
               <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
 </Link>
 </center>
-                        </p>
 </div>
 
 
@@ -202,17 +206,18 @@ sensitive information assets.
                             Penetration Tester
                         </h1>
 
-                        <p>
+                        <p className = 'frame-box'>
                         Careful Watchers is develops and implement an
 organization's information security policies, procedures, and best practices to protect its
 sensitive information assets.
 <br />
-<center>
+
+                        </p>
+                        <center>
 <Link to = '/getquote'>
               <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
 </Link>
 </center>
-                        </p>
 
 
 

@@ -317,8 +317,7 @@ const DarkDiv = ()=>{
                     <div className = 'dark-div-right'>
                         <h1>
 
-                        Innovative Electronic Protection Of 
-                        Your Office And Home Control Online
+                        Our Security Proceedures
 
                         </h1>
                         <div className = 'dd-scrolls'>

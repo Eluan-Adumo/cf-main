@@ -2533,6 +2533,12 @@ footer {
     margin-left: 10px;
   }
 
+  .list-content-side h2{
+    font-family: "bold";
+  }
+.dark-div-left{
+  display: none;
+}
   
 }
 

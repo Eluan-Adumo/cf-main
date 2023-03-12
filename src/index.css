@@ -1502,9 +1502,33 @@ footer {
   }
 
   .page-two-cards ul li {
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 250px;
     background: #ffdbe2;
     padding: 10px;
+  }
+
+  #cont-1{
+    display: block;
+    margin-top: 30px;
+  }
+
+  #cont-2{
+    display: block;
+    margin-top: 60px;
+  }
+  
+  #r-more{
+    margin-top: 10px;
+    background:#25245e;
+    
+  }
+
+  #r-more a{
+    color: white;
+    text-decoration: none;
   }
 
   .pathed-area {

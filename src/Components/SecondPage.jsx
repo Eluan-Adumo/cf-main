@@ -100,7 +100,7 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
 
                                 <div className = 'grid-content-area'>
                                 <span className = 'b-icon'><CgWebsite /></span>
-                                <div className = 'grid-content-area-content'>
+                                <div className = 'grid-content-area-content' id = 'cont-1'>
                                     <h1>Security Awareness Training</h1>
                                     <p>
 
@@ -133,7 +133,7 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
 
                                 <div className = 'grid-content-area'>
                                     <span className = 'b-icon'><BsFillBugFill /></span>
-                                    <div className = 'grid-content-area-content'>
+                                    <div className = 'grid-content-area-content' id = 'cont-2'>
                                     <h1>Business Information Security</h1>
                                     <p>
 
@@ -160,18 +160,18 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
                         <div className = 'area-left'>
                             <h1>Our Approach to Security</h1>
                             <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                            In accordance with our methodology, the following techniques are utilized to safeguard digital assets from unauthorized access, theft, damage, or other types of cyberattacks:
+
                             </p>
                             <ul>
                                 <li>
                                     <div className = 'list-content-side'>
-                                            <h2>Secure By Design</h2>
+                                            <h2>Conduct Regular Risk Assessments</h2>
                                             <p>
-                                            Lorem ipsum dolor sit amet, 
-                                            consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut 
-                                            suspendisse ultrices
+                                            Careful Watchers conduct's regular risk assessments to 
+                                            identify potential security threats and vulnerabilities in the 
+                                            client's IT infrastructure. This can involve analyzing the client's network, software, hardware, and other 
+                                            IT assets to identify potential security weaknesses.
                                             </p>
                                     </div>
                                     <span className = 'list-icon-side'>
@@ -181,12 +181,9 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
 
                                 <li>
                                 <div className = 'list-content-side'>
-                                            <h2>Compliant By Design</h2>
+                                            <h2>Provide Security Training and Awareness</h2>
                                             <p>
-                                            Lorem ipsum dolor sit amet, 
-                                            consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut 
-                                            suspendisse ultrices
+                                            Conduct Regular Risk Assessments
                                             </p>
                                     </div>
                                     <span className = 'list-icon-side'>
@@ -196,12 +193,9 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
 
                                 <li>
                                 <div className = 'list-content-side'>
-                                            <h2>Continuous Monitoring</h2>
+                                            <h2>Implement Robust Security Solutions</h2>
                                             <p>
-                                            Lorem ipsum dolor sit amet, 
-                                            consectetur adipiscing elit, 
-                                            sed do eiusmod tempor incididunt ut 
-                                            suspendisse ultrices
+                                            Careful Watchers implement robust security solutions to protect our client's IT infrastructure. This can include installing firewalls, intrusion detection and prevention systems, antivirus software, and other security tools
                                             </p>
                                     </div>
                                     <span className = 'list-icon-side'>

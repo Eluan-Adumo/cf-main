@@ -14,6 +14,7 @@ import Contact from './Pages/Contact';
 import Navbar from './Components/Headers';
 import { useEffect } from 'react';
 import GetQuote from './Pages/GetQuote';
+import Services from './Pages/Services';
 function App() {
   const {pathname} =useLocation()
   useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
         <Route path='/team' element={<Team />} />
         <Route path='/contactus' element={<Contact />} />
         <Route path='/getquote' element={<GetQuote />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
    </>
     

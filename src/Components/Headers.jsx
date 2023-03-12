@@ -55,14 +55,14 @@ const SmallHeader = () => {
             <BiLocationPlus />
                 </span>
               
-              &nbsp;658 Lane Drive St. St. Carolina
+              &nbsp;Tyrelstown County, Dublin.
             </li>
             <li>
             <span className = 'h-icon-side'>
             <MdPhoneInTalk />
             </span>
               
-              &nbsp;+234 (0)81 6454 7373
+              &nbsp;+353 (0)89 262 1986
             </li>
           </ul>
         </div>

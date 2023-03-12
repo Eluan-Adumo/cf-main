@@ -7,6 +7,8 @@ import {FiSettings} from "react-icons/fi"
 import lockImage from "../resources/images/electronic-img-1-1-1.png";
 import watcher from "../resources/images/approach-img-1-1-1.jpg";
 import Testimonials from './Testimonials'
+import { Link } from 'react-router-dom'
+import {MdKeyboardDoubleArrowRight} from "react-icons/md"
 const SecondPage = ()=>{
     return(
         <>
@@ -18,7 +20,7 @@ const SecondPage = ()=>{
                     <div className = 'page-two-highlight'>
                             <h1>What we do</h1>
                         <p>
-At Careful Watchers, we have a unique quirk that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach.
+At Careful Watchers, we have a unique quirk that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach (CaaS).
 
                         </p>
                     </div>
@@ -27,41 +29,103 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
                             <li>
 
                                 <div className = 'grid-content-area'>
-                                    <span className = 'b-icon'><CgWebsite /></span>
+                                    <span className = 'b-icon'>
+                                    <RiCustomerService2Line />
+                                        </span>
 
                                     <div className = 'grid-content-area-content'>
-                                    <h1>Managed Web Application</h1>
-                                    <p>
-                                        sed do eiusmod tempo
-                                        consectetur adipiscing elit, sed do eiusmod tempo
-                                    </p>
+                                    <h1>Security Consulting</h1>
+                                    
+                                       
+                                            <p><span className = 'i-icons-side'>
+                                                <MdKeyboardDoubleArrowRight />
+                                                </span>
+                                                
+                                                <span className = 'i-t-side'>
+                                                Consulting Service
+                                                </span>
+                                                </p>
+                                            <p> 
+                                            <span className = 'i-icons-side'>
+                                                <MdKeyboardDoubleArrowRight />
+                                                </span>
+                                                <span>Identifies Problems</span></p>
+                                            <p>
+                                            <span className = 'i-icons-side'>
+                                                <MdKeyboardDoubleArrowRight />
+                                                </span>
+                                                <span>Evaluates Security Issues</span></p>
+                                        
+                                            <p className = 'anim-btn' id = 'r-more'>      
+                                                <Link to = '/services'>
+                                                    <center>
+                                                    Read more
+                                                    </center>
+                                                    </Link>
+                                            </p>
 
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                            {/* <li>
 
                                 <div className = 'grid-content-area'>
-                                    <span className = 'b-icon'><RiCustomerService2Line /></span>
+                                    <span className = 'b-icon'><CgWebsite /></span>
                                     <div className = 'grid-content-area-content'>
-                                        <h1>Managed Web Application</h1>
+                                        <h1>Risk Assessment</h1>
                                         <p>
-                                            sed do eiusmod tempo
-                                            consectetur adipiscing elit, sed do eiusmod tempo
-                                        </p>
+                                        <span className = 'i-icons-side'>
+                                                <MdKeyboardDoubleArrowRight />
+                                                </span>
+
+                                                <span>
+                                                    Client Infrastructure
+                                                </span>
+                                            </p>
+                                            <p>
+                                            <span className = 'i-icons-side'>
+                                                <MdKeyboardDoubleArrowRight />
+                                                </span>
+
+                                                <span>
+                                                    Identify vulnerabilities
+                                                </span>
+
+                                            </p>
+                                                     
                                     </div>
                                 </div>
-                            </li>
+                            </li> */}
                             <li>
 
                                 <div className = 'grid-content-area'>
                                 <span className = 'b-icon'><CgWebsite /></span>
                                 <div className = 'grid-content-area-content'>
-                                    <h1>Managed Web Application</h1>
+                                    <h1>Security Awareness Training</h1>
                                     <p>
-                                        sed do eiusmod tempo
-                                        consectetur adipiscing elit, sed do eiusmod tempo
+
+                                    <span className = 'i-icons-side'>
+                                                <MdKeyboardDoubleArrowRight />
+                                                </span>
+
+                                                <span>
+                                                    Client awareness training.
+                                                </span>
+
                                     </p>
+                                    <p>
+                                    <span className = 'i-icons-side'>
+                                                <MdKeyboardDoubleArrowRight />
+                                                </span>
+                                       <span> Client&apos;s mitigation training</span>
+                                    </p>
+                                    <p className = 'anim-btn' id = 'r-more'> 
+                                        <center>
+                                        <Link to = '/services'> Read more</Link>
+                                        </center>
+                                        </p>
+                                    
+                                    
                                     </div>
                                 </div>
                             </li>
@@ -70,11 +134,19 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
                                 <div className = 'grid-content-area'>
                                     <span className = 'b-icon'><BsFillBugFill /></span>
                                     <div className = 'grid-content-area-content'>
-                                    <h1>Managed Web Application</h1>
+                                    <h1>Business Information Security</h1>
                                     <p>
-                                        sed do eiusmod tempo
-                                        consectetur adipiscing elit, sed do eiusmod tempo
-                                    </p>
+
+                                    <span className = 'i-icons-side'>
+                                                <MdKeyboardDoubleArrowRight />
+                                                </span>
+
+                                                <span>
+                                                    Security Policies
+                                                </span>
+                                    
+<p id = 'r-more' className = 'anim-btn'><Link to = '/services' ><center>Read more</center></Link></p>
+                                 </p>
                                     </div>
                                 </div>
                             </li>
@@ -181,7 +253,7 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
                             </li>
                         </ul>
 
-                        <ul className = 'f-2-ul'>
+                        {/* <ul className = 'f-2-ul'>
                             <li id = 'f21'>
                             <div className = 'p-t-g-a-text-area'>
                                     <h2>Incident Responder</h2>
@@ -206,7 +278,7 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
                                     </p>
                                 </div>
                             </li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </section>
             </section>
@@ -319,28 +391,11 @@ const ThirdDiv = ()=>{
                       <div className = 'page-two-highlight'>
                             <h1>About Us</h1>
                         <p>
-                        At Careful Watchers, we have a unique quirk that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach.
+                        At Careful Watchers, we have a unique quirk that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach (CaaS).
+    
 
                         </p>
-                        <p>
-                        What does this mean? We believe that cyber security is not just about protecting your systems from external threats, but it's also about protecting your organization from internal vulnerabilities. That's why our services go beyond technical solutions and also address the human factor.
-                        </p>
-                        <p>
-                        Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.                        </p>
-                        <p>
-                        With our team of certified cyber security consultants, we can help you identify, prioritize, and respond immediately to threats and vulnerabilities in your system. Our collaborative approach involves working closely with you to develop a clear risk management process tailored to your business operations. We provide simple, visual reporting that resonates clearly with business executives while speaking their language.                        </p>
-
-                        <p>
-                        At Careful Watchers, we are committed to providing you with first-class expertise and resources to deliver the services you deserve. We exercise our greatest asset – intelligence – to continuously innovate cost-effective solutions to dynamic information security needs. With us as your complete security partner, you can trust that we are dependable and committed to urgently responding to all urgent requests.                        
-                        </p>
-
-                        <p>
-                        Our mission is to protect your company with strategic information security and data privacy services. We adhere to a sound Maturity Assessment, Profile and Plan (MAPP) built around the industry's highest standards and control frameworks. We are continuously improving, avid learners who believe in bringing updated information to continuously upgrade our services as it changes.                       
-                         </p>
-                         <p>
-                         Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.
-                         </p>
-                    </div>
+                                            </div>
 
 
                     <div className = 'page-cards'>
@@ -415,6 +470,34 @@ const ThirdDiv = ()=>{
                     </div>
                 </section>
             </section>
+        </>
+    )
+}
+
+const MoreAbtContent = ({props})=>{
+
+
+    return (
+        <>
+        <p>
+                        What does this mean? We believe that cyber security is not just about protecting your systems from external threats, but it's also about protecting your organization from internal vulnerabilities. That's why our services go beyond technical solutions and also address the human factor.
+                        </p>
+                        <p>
+                        Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.                        </p>
+                        <p>
+                        With our team of certified cyber security consultants, we can help you identify, prioritize, and respond immediately to threats and vulnerabilities in your system. Our collaborative approach involves working closely with you to develop a clear risk management process tailored to your business operations. We provide simple, visual reporting that resonates clearly with business executives while speaking their language.                        </p>
+
+                        <p>
+                        At Careful Watchers, we are committed to providing you with first-class expertise and resources to deliver the services you deserve. We exercise our greatest asset – intelligence – to continuously innovate cost-effective solutions to dynamic information security needs. With us as your complete security partner, you can trust that we are dependable and committed to urgently responding to all urgent requests.                        
+                        </p>
+
+                        <p>
+                        Our mission is to protect your company with strategic information security and data privacy services. We adhere to a sound Maturity Assessment, Profile and Plan (MAPP) built around the industry's highest standards and control frameworks. We are continuously improving, avid learners who believe in bringing updated information to continuously upgrade our services as it changes.                       
+                         </p>
+                         <p>
+                         Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.
+                         </p>
+
         </>
     )
 }

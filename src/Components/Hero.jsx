@@ -3,6 +3,7 @@ import {BsShieldCheck} from "react-icons/bs";
 import {GiPadlock} from "react-icons/gi";
 import {BiCertification} from "react-icons/bi";
 import {BsFillPlayFill} from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Hero = () =>{
     return (
@@ -37,7 +38,10 @@ const Hero = () =>{
                     themselves from digital threats.                    
                     </span>
                     <span className = 'hero-left-buttons'>
-                        <input type = 'button' className = 'g-started' value = 'Get Started' />
+                        <Link to = '/getquote'>
+                        <input type = 'button' className = 'g-started' value = 'Get Quote' />
+
+                        </Link>
                         <input type = 'button' value = 'About us' className = 'abt-us' />
                     </span>
                 </div>

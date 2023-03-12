@@ -230,19 +230,7 @@ button {
   font-size: 150%;
   animation: animatedBtn2 1s infinite;
 }
-.hero-bottom-items {
-  height: 250px;
-  width: 100%;
-  border: 0px solid white;
-  border-radius: 0px;
-  background: #181111;
-  background-size: 50% 100%;
-  color: white;
-  padding: 4%;
-  border-right: 2px solid crimson;
-  z-index: 200;
-  box-sizing: border-box;
-}
+
 /*.hero-bottom-items::before{*/
 /*    top: 0;*/
 /*    right: 0;*/
@@ -322,6 +310,7 @@ button {
   text-align: center;
   font-family: 'Roboto-Light';
   margin-bottom: 20px;
+  font-size: 14px;
 }
 
 .area-right img {
@@ -1144,6 +1133,20 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+  
+  .hero-bottom-items {
+    height: 250px;
+    width: 100%;
+    border: 0px solid white;
+    border-radius: 0px;
+    background: #181111;
+    background-size: 50% 100%;
+    color: white;
+    padding: 4%;
+    border-right: 2px solid crimson;
+    z-index: 200;
+    box-sizing: border-box;
+  }
   .dynamic-header-mobile{
     display: none;
   }
@@ -1518,6 +1521,7 @@ footer {
     display: block;
     margin-top: 10px;
     float: left;
+    padding-bottom: 2%;
   }
   .grid-content-area h1{
     color: #11132d;
@@ -1754,6 +1758,22 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .fourth-page{
+    padding-bottom: 5rem;
+  }
+  .hero-bottom-items {
+    min-height: 150px;
+    width: 100%;
+    border: 0px solid white;
+    border-radius: 0px;
+    background: #181111;
+    background-size: 50% 100%;
+    color: white;
+    padding: 4%;
+    border-right: 2px solid crimson;
+    z-index: 200;
+    box-sizing: border-box;
+  }
   .testimonies-headline {
     display: block;
     width: 90%;
@@ -2025,13 +2045,14 @@ footer {
     display: block;
     float: left;
     width: 100vw;
-    min-height: 70px;
+    min-height: 50px;
     padding-top: 3%;
     padding-bottom: 3%;
     background: #25245e;
     position: relative;
     margin-top: 0px;
     z-index: 200;
+    font-size: 90%;
     border: 0px solid white;
     font-family: "Roboto-Regular";
   }
@@ -2100,20 +2121,21 @@ footer {
 
   .bigger-header ul li {
     height: inherit;
-    line-height: 60px;
+    line-height: 50px;
   }
 
   .smh-left ul {
     display: grid;
     width: 100%;
     grid-template-columns: auto;
-    row-gap: 1%;
+    row-gap: 0.5%;
     line-height: 30px;
     list-style-type: none;
   }
 
   .smh-left ul li {
     color: white;
+    font-size: 90%;
   }
 
   .hero {
@@ -2197,6 +2219,8 @@ footer {
     margin-top: 50px;
   }
 
+ 
+
   .page-two-cards ul {
     display: grid;
     grid-template-columns: auto;
@@ -2205,9 +2229,20 @@ footer {
   }
 
   .page-two-cards ul li {
-    height: 200px;
+    min-height: 200px;
     background: #ffdbe2;
     padding: 10px;
+
+  }
+
+  #items{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10px;
+  } 
+
+  #items li{
+    height: 30px;
   }
 
   .pathed-area {
@@ -2236,8 +2271,19 @@ footer {
     font-family: 'Roboto-Light';
     line-height: 25px;
     padding-top: 0.5rem;
+    font-size: 90%;
+  }
+  .grid-content-area-content p a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
   }
 
+  #r-more{
+    width: 100px;
+    margin-top: 10px;
+    background: #25245e;
+  }
   .list-content-side p {
     padding-top: 0.5rem;
   }
@@ -2466,3 +2512,18 @@ footer {
   position: relative;
 }
 
+
+
+.s-icons-side{
+  display: block;
+  margin: 0px auto;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 45px;
+  background: crimson;
+  color: white;
+  border: 0px solid white;
+  border-radius: 20px;
+  font-size: 25px;
+}

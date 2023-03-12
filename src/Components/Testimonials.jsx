@@ -254,14 +254,13 @@ const FourthPath = ()=>{
                                     </div>
                                 </div>
 
-                                <div className = 'fourth-down'>
+                                {/* <div className = 'fourth-down'>
                                     <div className = 'fourth-title'>
                                         <h1>
                                         Latest News From Blog
                                         </h1>
                                         <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam neque quibusdam corrupti aspernatur corporis alias nisi dolorum expedita 
-                                        veritatis voluptates minima sapiente.
+Comming Soon
                                         </p>
                                     </div>
 
@@ -297,7 +296,7 @@ const FourthPath = ()=>{
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                     </section>
             </section>
         </>

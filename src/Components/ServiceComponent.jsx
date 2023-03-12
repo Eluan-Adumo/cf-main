@@ -5,6 +5,7 @@ import {MdOutlineSecurity}  from "react-icons/md";
 import {RiSkull2Fill, RiCustomerService2Fill} from "react-icons/ri"
 import {MdNetworkLocked}  from "react-icons/md"
 import {SiMicrosoftaccess} from "react-icons/si"
+import {HiDocumentSearch} from "react-icons/hi"
 import {HiBriefcase} from "react-icons/hi"
 import {CgWebsite} from "react-icons/cg"
 import {FaBookOpen} from "react-icons/fa";
@@ -65,7 +66,7 @@ threats to a Clients computer networks and computer system.
 <div className = 'page-two-highlight'>
                         <center>
                             <span className = 's-icons-side'>
-                            <RiSkull2Fill />
+                            <HiDocumentSearch />
                             </span>
                             
                         </center>

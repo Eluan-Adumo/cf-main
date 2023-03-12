@@ -7,6 +7,7 @@ import {MdNetworkLocked}  from "react-icons/md"
 import {SiMicrosoftaccess} from "react-icons/si"
 import {HiBriefcase} from "react-icons/hi"
 import {CgWebsite} from "react-icons/cg"
+import {FaBookOpen} from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 
@@ -77,12 +78,13 @@ threats to a Clients computer networks and computer system.
                         Careful Watchers will assess Client's IT infrastructure and
 identify vulnerabilities and risks.
 <br />
-<center>
+
+                        </p>
+                        <center>
 <Link to = '/getquote'>
               <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
 </Link>
 </center>
-                        </p>
 </div>
 
 <div className = 'page-two-highlight'>
@@ -144,7 +146,7 @@ to mitigate the impact of any cyber security incidents that may occur.
 
                         <center>
                             <span className = 's-icons-side'>
-                            <SiMicrosoftaccess />
+                            <FaBookOpen />
                             </span>
                             
                         </center>

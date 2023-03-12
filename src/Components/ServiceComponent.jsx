@@ -138,6 +138,35 @@ sensitive information assets.
                     </div>
                 </section>
             </section>
+
+            <div className='cl-content'>
+            <div className='c11'>
+              <input type='text' placeholder='Your Name' className='u-name' />
+              <input type='text' placeholder='Your Email' className='u-mail' />
+            </div>
+
+            <div className='c12'>
+              <input type='text' placeholder='Your Number' className='u-name' />
+              <input
+                type='text'
+                placeholder='Your Subject'
+                className='u-mail'
+              />
+            </div>
+
+            <div className='c13'>
+              <textarea placeholder='Your Message'></textarea>
+            </div>
+
+            <div className='c14'>
+              <input type='checkbox' /> Terms and Privacy Policy
+            </div>
+            <div className='c15'>
+              <center>
+                <button className='anim-btn'>Send Message</button>
+              </center>
+            </div>
+          </div>
             <Footer />
         </>
     )

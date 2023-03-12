@@ -33,7 +33,7 @@ const ServiceComponent = () =>{
                                 border: "0px solid white",
                                 borderRadius: "25px",
                                 textAlign: "center",
-                                marginTop: "130px",
+                                marginTop: "200px",
                                 fontSize: "25px",
                                 lineHeight: "45px"
                             }}>

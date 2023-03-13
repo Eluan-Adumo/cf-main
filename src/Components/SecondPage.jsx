@@ -15,6 +15,7 @@ const SecondPage = ()=>{
     const [isNVisible, setNVisible] = useState(false);
     const [isTVisible, setIsTVisible] = useState(false);
     const [isPc, setIsPc] = useState(false);
+    const [shouldDisplay, setShouldDisplay] = useState(false);
     useEffect(() => {
         if(window.innerWidth >=600 ){
             setIsPc(true);
@@ -238,15 +239,20 @@ const SecondPage = ()=>{
                                 <li>
                                     <div className = 'list-content-side'>
                                             <h2>Conduct Regular Risk Assessments</h2>
-                                            <p className = 'cond-reg'>
+                                            <p>
                                             Careful Watchers conduct's regular risk assessments to 
                                             identify potential security threats and vulnerabilities in the 
+                                            <span style = {{
+                                                display: shouldDisplay?`inline`: `none`
+                                            }}>
                                             client's IT infrastructure. This can involve analyzing the client's network, software, hardware, and other 
                                             IT assets to identify potential security weaknesses.
+                                            </span>
+
                                             </p>
                                     </div>
                                     <span className = 'list-icon-side' onClick = {()=>{
-                                        document.querySelector(".cond-reg").style.minHeight = "220px";
+                                       setShouldDisplay(!shouldDisplay);
                                     }}>
                                         <BsShieldPlus />
                                     </span>

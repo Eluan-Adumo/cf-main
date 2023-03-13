@@ -32,10 +32,7 @@ const Hero = () =>{
                     PROTECTING YOUR BUSINESS STARTS WITH SECURING YOUR DIGITAL ASSETS
                     </span>
                     <span className = 'hero-left-bottom'>
-                    Careful Watchers offers comprehensive cyber 
-                    security services to help Businesses, 
-                    Organizations and Individuals protect 
-                    themselves from digital threats.                    
+                    To create meaningful solutions, we combine technology from our technology partners with local assistance and implementation.                 
                     </span>
                     <span className = 'hero-left-buttons'>
                         <Link to = '/getquote'>

@@ -63,6 +63,9 @@ a{
 .hbi-content {
   font-family: 'light';
 }
+.hero-left-bottom{
+  line-height: 25px;
+}
 footer a {
   color: white;
   text-decoration: none;
@@ -2317,6 +2320,7 @@ footer {
     min-height: 200px;
     background: #ffdbe2;
     padding: 10px;
+    padding-bottom: 20px;
 
   }
 

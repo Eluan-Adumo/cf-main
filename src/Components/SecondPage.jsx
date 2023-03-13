@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 import {MdKeyboardDoubleArrowRight} from "react-icons/md"
 import {motion} from "framer-motion";
 const SecondPage = ()=>{
-    const [isVisible, setVisible] = useState(false);
+    const [isNVisible, setNVisible] = useState(false);
     const [isTVisible, setIsTVisible] = useState(false);
     const [isPc, setIsPc] = useState(false);
     useEffect(() => {
@@ -29,7 +29,7 @@ const SecondPage = ()=>{
         
         //   console.log(winScroll);
         if (winScroll >= 1000) {
-            setVisible(true);
+            setNVisible(true);
         }
         if(winScroll >= 3686){
             setIsTVisible(true);
@@ -48,7 +48,7 @@ const SecondPage = ()=>{
                     
                     {
                        
-                        isVisible
+                        isNVisible
                         &&
 
                         <motion.div className = 'page-two-highlight'
@@ -70,9 +70,11 @@ const SecondPage = ()=>{
                         }}
                         >
                                 <h1>What we do</h1>
-                            <p>
-    At Careful Watchers, we have a unique quirk that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach (CaaS).
-                            </p>
+                            <p className = 'frame-box'>
+                            Careful Watchers offers comprehensive cyber 
+                    security services to help Businesses, 
+                    Organizations and Individuals protect 
+                    themselves from digital threats.                            </p>
                         </motion.div>
                     }
 

@@ -15,6 +15,7 @@ import Navbar from './Components/Headers';
 import { useEffect } from 'react';
 import GetQuote from './Pages/GetQuote';
 import Services from './Pages/Services';
+import FAQ from './Pages/FAQ';
 
 import { AnimatePresence } from "framer-motion";
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path='/contactus' element={<Contact />} />
           <Route path='/getquote' element={<GetQuote />} />
           <Route path='/services' element={<Services />} />
+          <Route path='/faq' element={<FAQ />} />
         </Routes>
       </AnimatePresence>
    </>

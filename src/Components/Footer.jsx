@@ -17,8 +17,8 @@ const Footer = () =>{
                                     <MdPhoneInTalk />
                                 </span>
                                 <span className = 'f-text-side'>
-                                <b>Hot line</b><p>
-                                0856476468464
+                                <p>
+                                +353 (0) 89 262 1986
                                 </p>
                                 </span>
                                 </li>
@@ -26,14 +26,14 @@ const Footer = () =>{
                             <span className = 'f-icon-side'>
                                     <FiMail />
                                 </span>
-                                <span className = 'f-text-side'><b>Email</b> <p>xxx@yyy.com</p></span>
+                                <span className = 'f-text-side'> <p>info@carefulwatchers.com</p></span>
                                 </li>
                             <li>
                             <span className = 'f-icon-side'>
                                     <BiLocationPlus />
                                 </span>
-                                <span className = 'f-text-side'><b>Address</b><p>
-                            123, Western Road, Melbourne Australia
+                                <span className = 'f-text-side'><p>
+                                Tyyrelstown County, Dublin.
                                 </p></span>
                                 </li>
                         </ul>
@@ -73,7 +73,9 @@ const Footer = () =>{
                                 </span>Contact Us</li>
                             <li><span className = 'f-icon-side'>
                                     <MdKeyboardDoubleArrowRight />
-                                </span>Faq </li>
+                                </span>
+                                
+                                <Link to = '/faq'>Faq</Link> </li>
                             <li><span className = 'f-icon-side'>
                                     <MdKeyboardDoubleArrowRight />
                                 </span>Privacy Policy</li>

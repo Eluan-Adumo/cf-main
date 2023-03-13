@@ -55,7 +55,7 @@ const SmallHeader = () => {
             <BiLocationPlus />
                 </span>
               
-              &nbsp;Tyrelstown County, Dublin.
+              &nbsp;Tyyrelstown County, Dublin.
             </li>
             <li>
             <span className = 'h-icon-side'>

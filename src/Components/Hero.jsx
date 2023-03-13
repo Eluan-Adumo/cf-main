@@ -70,7 +70,7 @@ const Hero = () =>{
 
                         </span>
                         <span className = 'hbi-content'>
-                               We Offer 24/7 Cyber Security services to our clients with Human Support.
+                            We are dedicated to providing round-the-clock cyber security services to ensure that our clients are protected at all times.
                             <p>
                             <BsShieldCheck />
                             </p>
@@ -101,7 +101,8 @@ const Hero = () =>{
                             <span className = 'hbi-icon'><BiCertification /></span><span className='text-side'>Industry Verified</span>
                         </span>
                         <span className = 'hbi-content'>
-                            Careful Watchers is a register Cyber Security Copmany under the Dublin/UK government.
+                            Our company is proudly registered in Ireland and is also a part of Cyber Ireland demonstrating our commitment to the grouth and development of the
+                            Cybersecurity industry in Ireland.
                             <p>
                             <BiCertification /> 
                             </p>

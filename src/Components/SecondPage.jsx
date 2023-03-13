@@ -190,6 +190,19 @@ const SecondPage = ()=>{
                                     <span className = 'b-icon'><BsFillBugFill /></span>
                                     <div className = 'grid-content-area-content' id = 'cont-2'>
                                     <h1>Business Information Security</h1>
+
+                                    <p>
+                                    <span className = 'i-icons-side'>
+                                                <MdKeyboardDoubleArrowRight />
+                                                </span>
+                                       <span>Data Protection</span>
+                                    </p>
+                                    <p>
+                                    <span className = 'i-icons-side'>
+                                                <MdKeyboardDoubleArrowRight />
+                                                </span>
+                                       <span> Business Continuity Plan (BCP)</span>
+                                    </p>
                                     <p>
 
                                     <span className = 'i-icons-side'>
@@ -225,14 +238,16 @@ const SecondPage = ()=>{
                                 <li>
                                     <div className = 'list-content-side'>
                                             <h2>Conduct Regular Risk Assessments</h2>
-                                            <p>
+                                            <p className = 'cond-reg'>
                                             Careful Watchers conduct's regular risk assessments to 
                                             identify potential security threats and vulnerabilities in the 
                                             client's IT infrastructure. This can involve analyzing the client's network, software, hardware, and other 
                                             IT assets to identify potential security weaknesses.
                                             </p>
                                     </div>
-                                    <span className = 'list-icon-side'>
+                                    <span className = 'list-icon-side' onClick = {()=>{
+                                        document.querySelector(".cond-reg").style.minHeight = "220px";
+                                    }}>
                                         <BsShieldPlus />
                                     </span>
                                 </li>
@@ -240,11 +255,15 @@ const SecondPage = ()=>{
                                 <li>
                                 <div className = 'list-content-side'>
                                             <h2>Provide Security Training and Awareness</h2>
-                                            <p>
-                                            Conduct Regular Risk Assessments
+                                            <p clssName = 'aw-cont'>
+                                            Training and education services to help clients 
+                                            improve their security awareness and knowledge, 
+                                            such as providing cybersecurity awareness training to employees
                                             </p>
                                     </div>
-                                    <span className = 'list-icon-side'>
+                                    <span className = 'list-icon-side' onClick = {()=>{
+                                        document.querySelector(".awt-cont").style.minHeight = "220px";
+                                    }}>
                                         <BsShieldPlus />
                                     </span>
                                 </li> 
@@ -269,7 +288,7 @@ const SecondPage = ()=>{
                     </div>
 
 
-{
+{/* {
                          
                                 isTVisible
                                 &&
@@ -299,8 +318,8 @@ const SecondPage = ()=>{
                             corporis alias nisi dolorum expedita veritatis voluptates minima sapiente.
                         </p>
                     </motion.div>
-                }
-                    <div className = 'page-two-grid-area'>
+                } */}
+                    {/* <div className = 'page-two-grid-area'>
                         <ul className='f-1-ul'>
                             <li id = 'f11'>
                                 <div className = 'p-t-g-a-text-area'>
@@ -328,7 +347,7 @@ const SecondPage = ()=>{
                                     </p>
                                 </div>
                             </li>
-                        </ul>
+                        </ul> */}
 
                         {/* <ul className = 'f-2-ul'>
                             <li id = 'f21'>
@@ -356,7 +375,7 @@ const SecondPage = ()=>{
                                 </div>
                             </li>
                         </ul> */}
-                    </div>
+                    {/* </div> */}
                 </section>
             </section>
             <DarkDiv />
@@ -368,6 +387,12 @@ const SecondPage = ()=>{
 
 
 const DarkDiv = ()=>{
+    const [pwd, setPwd] = useState(true);
+    const[ac, setAc] = useState(false);
+    const[encrypt, setEncrypt] = useState(false);
+    const[pacd, setPAc] = useState(false);
+    const [backup, setBackup] = useState(false);
+
     return(
         <>
             <section className = 'dark-div'>
@@ -382,35 +407,93 @@ const DarkDiv = ()=>{
                         <div className = 'dd-scrolls'>
                             <div className = 'dd-scrolls-header'>
                                 <ul>
-                                    <li>Our Goal</li>
-                                    <li>Encryption</li>
-                                    <li>GDPR</li>
-                                    <li>CCTV</li>
-                                    <li>Intercom System</li>
+                                    <li onClick={()=>{
+                                        setPwd(true);
+                                        setAc(false);
+                                        setEncrypt(false);
+                                        setBackup(false);
+                                        setPAc(false);
+
+                                    }}>Password</li>
+                                    <li
+                                    onClick={()=>{
+                                        setPwd(false);
+                                        setAc(true);
+                                        setEncrypt(false);
+                                        setBackup(false);
+                                        setPAc(false);
+                                    }}
+                                    >Access Control</li>
+                                    <li 
+                                    onClick={()=>{
+                                        setPwd(false);
+                                        setAc(false);
+                                        setEncrypt(true);
+                                        setBackup(false);
+                                        setPAc(false);
+
+                                    }}
+                                    >Encryption</li>
+                                    <li onClick={()=>{
+                                        setPwd(false);
+                                        setAc(false);
+                                        setEncrypt(false);
+                                        setBackup(true);
+                                        setPAc(false);
+
+                                    }}>Backup</li>
+                                    <li
+                                    onClick={()=>{
+                                        setPwd(true);
+                                        setAc(false);
+                                        setEncrypt(false);
+                                        setBackup(false);
+                                        setPAc(true);
+
+                                    }}
+                                    >Physical Access</li>
                                 </ul>
                                 
                             </div>
                             <div className = 'text-side'>
-                                    <p>
-                                    Lorem ipsum dolor, 
-                                    sit amet consectetur adipisicing elit. Illo 
-                                    ducimus vero, vero corporis voluptates 
-                                    beatae pariatur laudantium, fugiat illum ab 
-                                    deserunt nostrum aliquid quisquam esse? 
-                                    Voluptatibus quia velit numquam esse porro 
-                                    ipsum dolor, sit amet consectetur adipisicing elit. 
-                                    Illo ducimus vero, corporis.
+                                {
+
+                                    pwd
+                                    &&
+                                    <p className = 'pwd'>
+                                    Implementing strong password policies, such as requiring passwords to be complex and changed regularly, can help prevent unauthorized access.
                                     </p>
-                                    <p>
-                                    Lorem ipsum dolor, 
-                                    sit amet consectetur adipisicing elit. Illo 
-                                    ducimus vero, vero corporis voluptates 
-                                    beatae pariatur laudantium, fugiat illum ab 
-                                    deserunt nostrum aliquid quisquam esse? 
-                                    Voluptatibus quia
+                                }
+                                    
+
+{
+    backup
+    &&
+    <p className = 'backups'>
+    Limiting access to sensitive information to authorized personnel only can help prevent unauthorized access or disclosure.                                    
+    </p>
+}
+                                    
+
+                                    
+                                    {
+                                        ac
+
+                                        &&
+                                        <p className = 'a-cont'>
+
+                                    Regular data backups can help ensure that data can be recovered in the event of a cybersecurity incident.
                                     </p>
-                                    <br />
-                                    <button className = 'anim-btn'>Learn More</button>
+
+                                    }
+                                    
+{
+    encrypt
+    &&
+                                        <p className = 'encrypt'>
+                                        Encrypting sensitive data can help protect it from unauthorized access or disclosure.                                    
+                                        </p>
+}
                                 </div>
                         </div>
                     </div>

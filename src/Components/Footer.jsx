@@ -70,7 +70,8 @@ const Footer = () =>{
                         <ul>
                             <li><span className = 'f-icon-side'>
                                     <MdKeyboardDoubleArrowRight />
-                                </span>Contact Us</li>
+                                </span>
+                                <Link to = '/contactus'>Contact Us</Link></li>
                             <li><span className = 'f-icon-side'>
                                     <MdKeyboardDoubleArrowRight />
                                 </span>

@@ -6,6 +6,7 @@ import {CgFileDocument} from "react-icons/cg"
 import {FiSettings} from "react-icons/fi"
 import lockImage from "../resources/images/electronic-img-1-1-1.png";
 import watcher from "../resources/images/approach-img-1-1-1.jpg";
+import {BsFillCheckCircleFill} from "react-icons/bs";
 import Testimonials from './Testimonials'
 import { Link } from 'react-router-dom'
 import {MdKeyboardDoubleArrowRight} from "react-icons/md"
@@ -359,7 +360,7 @@ const SecondPage = ()=>{
                 </section>
             </section>
             <DarkDiv />
-            <ThirdDiv />
+            <ThirdDiv showAbout = {false} showInitial= {true} coreValues = {false} showCards = {true}/>
             <Testimonials />
         </>
     )
@@ -426,12 +427,18 @@ const DarkDiv = ()=>{
 
 
 
-const ThirdDiv = ()=>{
+const ThirdDiv = (props)=>{
+    const showAbout = props.showAbout;
+    const showInitial = props.showInitial;
+    const coreValues = props.coreValues;
+    const showCards = props.showCards;
     return(
         <>
             <section className = 'third-div'>
                 <section className = 'third-div-content'>
-                <div className = 'page-two-highlight'>
+                <div className = 'page-two-highlight'style = {{
+                display: showInitial?`block` : `none`
+            }}>
                             <h1>
                             Complete And Effective 
                             Protection For Your Home And Office
@@ -442,23 +449,45 @@ const ThirdDiv = ()=>{
                     </div>
 
 
-                    <div className = 'page-two-highlight'>
-                            <h1>
-                            The Problem
-                            </h1>
-                            <p>
-                            Cyber attacks are becoming more prevalent, which might have far-reaching effects on individuals, companies, and society at large. It is crucial to take preventative measures to safeguard against cyber threats, such as investing in cybersecurity, raising public awareness and educating people about cyber threats, 
-                            and creating plans for defending against cyberattacks.                            
-                            </p>
-                    </div>
 
-                    <div className = 'page-two-highlight'>
-                            <h1>
-                            Our Solution
-                            </h1>
-                            <p>
-                            Careful Watchers solve a range of problems related to protecting digital systems and data from unauthorized access, theft, damage, and other forms of cyber threats. These threats can come in various forms, such as hacking, malware, phishing, ransomware, and social engineering attacks.                            </p>
-                    </div>
+{
+    showInitial
+    &&
+
+        <div className = 'page-two-highlight'>
+            <h1>
+            The Problem
+            </h1>
+            <p>
+            Cyber attacks are becoming more prevalent, which might have far-reaching effects on individuals, companies, and society at large. It is crucial to take preventative measures to safeguard against cyber threats, such as investing in cybersecurity, raising public awareness and educating people about cyber threats, 
+            and creating plans for defending against cyberattacks.                            
+            </p>
+        </div>
+
+        // <div className = 'page-two-highlight'>
+        //     <h1>
+        //     Our Solution
+        //     </h1>
+        //     <p>
+        //     Careful Watchers solve a range of problems related to protecting digital systems and data from unauthorized access, theft, damage, and other forms of cyber threats. These threats can come in various forms, such as hacking, malware, phishing, ransomware, and social engineering attacks.                            </p>
+        // </div>
+
+}
+
+{
+    showInitial
+    &&
+
+            <div className = 'page-two-highlight'>
+            <h1>
+            Our Solution
+            </h1>
+            <p>
+            Careful Watchers solve a range of problems related to protecting digital systems and data from unauthorized access, theft, damage, and other forms of cyber threats. These threats can come in various forms, such as hacking, malware, phishing, ransomware, and social engineering attacks.                            </p>
+        </div>
+
+}
+
 
 
 
@@ -466,13 +495,98 @@ const ThirdDiv = ()=>{
                       <div className = 'page-two-highlight'>
                             <h1>About Us</h1>
                         <p>
-                        At Careful Watchers, we have a unique quirk that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach (CaaS).
-    
+                        At Careful Watchers, we have a unique pattern that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach.    
 
                         </p>
                                             </div>
 
+{
+    showAbout
 
+    &&
+    <MoreAbtContent />
+}
+
+                {
+                    coreValues
+                    &&
+                    <div className = 'page-cards'>
+                        <div className = 'each-card'>
+                                <span className = 'card-icon'>
+                                <BsFillCheckCircleFill />
+                                </span>
+                                <div className = 'card-contents'>
+                                    <h1>
+                                    Confidentiality
+
+                                    </h1>
+                                    <p>
+                                    This refers to the protection of sensitive information from unauthorized access or disclosure
+                                    </p>
+                                </div>
+                        </div>
+                        <div className = 'each-card'>
+                                <span className = 'card-icon'>
+                                <BsFillCheckCircleFill />
+                                </span>
+                                <div className = 'card-contents'>
+                                    <h1>
+                                    Integrity
+
+                                    </h1>
+                                    <p>
+                                    This refers to the accuracy and consistency of data or information. Cybersecurity measures are put in place to ensure that data is not altered, destroyed, or tampered with, whether intentionally or accidentally
+                                    </p>
+                                </div>
+                        </div>
+                        <div className = 'each-card'>
+                                <span className = 'card-icon'>
+                                <BsFillCheckCircleFill />
+                                </span>
+                                <div className = 'card-contents'>
+                                    <h1>
+                                    Availability
+
+                                    </h1>
+                                    <p>
+                                    This refers to the ability of authorized users to access the information or resources they need when they need them
+                                    </p>
+                                </div>
+                        </div>
+                        {/* <div className = 'each-card'>
+                                <span className = 'card-icon'>
+                                <FiSettings />
+                                </span>
+                                <div className = 'card-contents'>
+                                    <h1>
+                                    24/7 Support And Remote Admit
+
+                                    </h1>
+                                    <p>
+                                    Lorem ipsum dolor sit 
+                                    amet, consectetur 
+                                    adipiscing elit, 
+                                    sed do eiusmod tempor
+                                    </p>
+                                </div>
+                        </div> */}
+
+<center>
+
+                    
+<Link to = '/getquote'>
+            <input type ='button' value = 'Contact Us' className ='anim-btn'/>
+</Link>
+
+</center>
+                    </div>
+
+
+                }
+
+                {
+                    showCards
+                    &&
                     <div className = 'page-cards'>
                         <div className = 'each-card'>
                                 <span className = 'card-icon'>
@@ -543,6 +657,9 @@ const ThirdDiv = ()=>{
                                 </div>
                         </div>
                     </div>
+                }
+
+                    
                 </section>
             </section>
         </>
@@ -558,25 +675,21 @@ const MoreAbtContent = ({props})=>{
 
         
         <p>
-                        What does this mean? We believe that cyber security is not just about protecting your systems from external threats, but it's also about protecting your organization from internal vulnerabilities. That's why our services go beyond technical solutions and also address the human factor.
+        What does this mean? We believe that cyber security is not just about protecting your systems from external threats, but it's also about protecting your organization from internal vulnerabilities. That's why our services go beyond technical solutions and also address the human factor.
+
                         </p>
                         <p>
                         Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.                        
                         </p>
                         <p>
-                        With our team of certified cyber security consultants, we can help you identify, prioritize, and respond immediately to threats and vulnerabilities in your system. Our collaborative approach involves working closely with you to develop a clear risk management process tailored to your business operations. We provide simple, visual reporting that resonates clearly with business executives while speaking their language.                        
+                        Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.
                         </p>
 
                         <p>
-                        At Careful Watchers, we are committed to providing you with first-class expertise and resources to deliver the services you deserve. We exercise our greatest asset – intelligence – to continuously innovate cost-effective solutions to dynamic information security needs. With us as your complete security partner, you can trust that we are dependable and committed to urgently responding to all urgent requests.                        
+                        With our team of certified cyber security consultants, we can help you identify, prioritize, and respond immediately to threats and vulnerabilities in your system. Our collaborative approach involves working closely with you to develop a clear risk management process tailored to your business operations. We provide simple, visual reporting that resonates clearly with business executives while speaking their language.
                         </p>
 
-                        <p>
-                        Our mission is to protect your company with strategic information security and data privacy services. We adhere to a sound Maturity Assessment, Profile and Plan (MAPP) built around the industry's highest standards and control frameworks. We are continuously improving, avid learners who believe in bringing updated information to continuously upgrade our services as it changes.                       
-                         </p>
-                         <p>
-                         Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.
-                         </p>
+
                          </div>
 
         </>

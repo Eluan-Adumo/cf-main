@@ -18,9 +18,8 @@ const Team = () => {
           <div className='team-headline'>
             <h1>OUR EXPERT TEAM</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Doloribus quam neque quibusdam corrupti aspernatur corporis alias
-              nisi dolorum expedita veritatis voluptates minima sapiente.
+            Our cyber security team of experts are highly skilled and experienced professionals who are dedicated to providing comprehensive and reliable solutions to protect our clients' digital assets from potential cyber threats.
+
             </p>
           </div>
           <div className='team-cards'>

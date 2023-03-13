@@ -4,15 +4,15 @@ import { SmallHeader, BiggerHeader } from '../Components/Headers';
 import Footer from '../Components/Footer';
 import { ThirdDiv, DarkDiv } from '../Components/SecondPage';
 import Testimonials from '../Components/Testimonials';
-import {MoreAbtContent} from "../Components/SecondPage";
+
 const About = () => {
   return (
     <>
       <SmallHero title='About' />
-      <ThirdDiv />
+      <ThirdDiv showAbout = {true} showInitial = {false} coreValues = {true} showCards = {false}/>
       {/* <DarkDiv />
       <Testimonials /> */}
-      <MoreAbtContent  />
+      
       <Footer />
     </>
   );

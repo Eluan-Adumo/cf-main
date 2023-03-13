@@ -36,7 +36,7 @@ const Team = () => {
               <div className='t-picture-side tony-obi'></div>
               <div className='t-role-side'>
                 <h2>Tony Obisesan</h2>
-                <p>Cyber Security analyst</p>
+                <p>Cyber Sec. analyst</p>
                 <p>Co-Founder</p>
               </div>
             </div>
@@ -45,7 +45,7 @@ const Team = () => {
               <div className='t-picture-side dabotubo-briggs'></div>
               <div className='t-role-side'>
                 <h2>Dabotubo Briggs</h2>
-                <p>Cyber Security Specialist</p>
+                <p>Cyber Sec. Specialist</p>
                 <p>COO Co-Founder</p>
               </div>
             </div>
@@ -54,7 +54,7 @@ const Team = () => {
               <div className='t-picture-side francis'></div>
               <div className='t-role-side'>
                 <h2>Dr. Francis Nwebonyi</h2>
-                <p>Cyber Security Consultant</p>
+                <p>Cyber Sec. Consultant</p>
                 <p>Co-Visionary</p>
               </div>
             </div>
@@ -63,7 +63,7 @@ const Team = () => {
               <div className='t-picture-side Ifeoluwa-Oloyede'></div>
               <div className='t-role-side'>
                 <h2>Ifeoluwa Oloyede</h2>
-                <p>Cyber Security Analyst</p>
+                <p>Cyber Sec. Analyst</p>
                 <p>Non -Executive Director</p>
               </div>
             </div>

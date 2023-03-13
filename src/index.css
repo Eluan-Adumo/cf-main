@@ -638,7 +638,7 @@ footer {
     url('resources/images/footer-bg-1-1-1-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  bottom: 0px;
+  bottom: 0;
   position: relative;
   clear: both;
 }
@@ -2595,16 +2595,17 @@ footer {
   width: 100%;
   grid-template-columns: 45% 45%;
   column-gap: 10%;
-  height: 30px;
-  line-height: 30px;
+  min-height: 30px;
+  line-height: 23px;
+  padding: .5rem;
   color: white;
-  background-color: #05224c;
+  /* background-color: #05224c; */
   font-family: "Roboto-Regular";
-  text-align: center;
+  text-align: left;
   bottom: 0;
   clear: both;
   position: relative;
-  font-size: 80%;
+  font-size: 70%;
 }
 
 

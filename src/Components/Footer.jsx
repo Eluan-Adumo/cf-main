@@ -372,24 +372,7 @@ const Footer = () =>{
                         
                         <ul>
 
-                            <li
-                            onClick = {()=>{
-                                setShowBox(true);
-                                setShowPP(true);
-                                setShowTerms(false);
-                            }}
-                            ><span className = 'f-icon-side'>
-                                    <MdKeyboardDoubleArrowRight />
-                                </span>Privacy Policy</li>
-                            <li
-                            onClick={()=>{
-                                setShowBox(true);
-                                setShowTerms(true);
-                                setShowPP(false);
-                            }}
-                            ><span className = 'f-icon-side'>
-                                    <MdKeyboardDoubleArrowRight />
-                                </span>Terms & Conditions</li>
+                           
 
                         </ul>
                     </div> 
@@ -403,18 +386,20 @@ const Footer = () =>{
                 Copyright @2023 Careful Watchers. All Rights Reserved.
                 </div>
                 <div className = 'pf-right'>
-                Terms & Conditions &mdash; Privacy Policy
+                <span onClick={()=>{
+                                setShowBox(true);
+                                setShowTerms(true);
+                                setShowPP(false);
+                            }}>Terms & Conditions</span> &mdash; 
+                <span onClick = {()=>{
+                    setShowBox(true);
+                    setShowPP(true);
+                    setShowTerms(false);
+                }}>Privacy Policy</span>
                 </div>
             </div> 
             </footer>
-            {/* <div className = 'post-footer'>
-                <div className = 'pf-left'>
-                Copyright @2023 Careful Watchers. All Rights Reserved.
-                </div>
-                <div className = 'pf-right'>
-                Terms & Conditions &mdash; Privacy Policy
-                </div>
-            </div> */}
+            
         </>
     )
 }

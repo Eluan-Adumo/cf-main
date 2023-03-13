@@ -2595,8 +2595,8 @@ footer {
   width: 100%;
   grid-template-columns: 45% 45%;
   column-gap: 10%;
-  height: 50px;
-  line-height: 50px;
+  height: 30px;
+  line-height: 30px;
   color: white;
   background-color: #05224c;
   font-family: "Roboto-Regular";
@@ -2604,6 +2604,7 @@ footer {
   bottom: 0;
   clear: both;
   position: relative;
+  font-size: 80%;
 }
 
 

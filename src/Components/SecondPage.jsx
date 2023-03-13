@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {CgWebsite} from 'react-icons/cg'
 import {RiCustomerService2Line} from 'react-icons/ri'
 import {BsFillBugFill, BsShieldPlus} from "react-icons/bs"
@@ -11,43 +11,71 @@ import { Link } from 'react-router-dom'
 import {MdKeyboardDoubleArrowRight} from "react-icons/md"
 import {motion} from "framer-motion";
 const SecondPage = ()=>{
+    const [isVisible, setVisible] = useState(false);
+    const [isTVisible, setIsTVisible] = useState(false);
+    const [isPc, setIsPc] = useState(false);
+    useEffect(() => {
+        if(window.innerWidth >=600 ){
+            setIsPc(true);
+        }
+        window.addEventListener('scroll', listenScroll);
+        return () => window.removeEventListener('scroll', listenScroll);
+        
+      }, []);
+      const listenScroll = () => {
+        const d = document;
+        const winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        
+        //   console.log(winScroll);
+        if (winScroll >= 1000) {
+            setVisible(true);
+        }
+        if(winScroll >= 3686){
+            setIsTVisible(true);
+        }
     
+      };
     return(
         <>
-        {/* <motion.section className = 'contact-div'
-            initial = {{
-                    width: 0
-                }}
-                animate = {{
-                    width: "100vw"
-                }}  
-                
-                exit = {{
 
-                }}
-            ></motion.section> */}
             <section className = 'page-two'>
                 <section className = 'page-two-content'>
                     <div className = 'page-two-slider'>
 
                     </div>
-                    <motion.div className = 'page-two-highlight'
-                    // initial = {{
-                    //     marginLeft: "-50%"
-                    // }}
-                    // animate = {{
-                    //     marginLeft: "0%"
-                    // }}  
+
                     
-                    // exit = {{
-        
-                    // }}
-                    >
-                            <h1>What we do</h1>
-                        <p>
-At Careful Watchers, we have a unique quirk that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach (CaaS).
-                        </p>
-                    </motion.div>
+                    {
+                       
+                        isVisible
+                        &&
+
+                        <motion.div className = 'page-two-highlight'
+                        initial = {{
+                            marginLeft: "-100%"
+                        }}
+                        animate = {{
+
+                            
+                            marginLeft : isPc ?`20%` : `5%`
+                        }}  
+                        transition = {{
+                            ease : "linear",
+                            duration: 1
+                        }}
+                        
+                        exit = {{
+            
+                        }}
+                        >
+                                <h1>What we do</h1>
+                            <p>
+    At Careful Watchers, we have a unique quirk that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach (CaaS).
+                            </p>
+                        </motion.div>
+                    }
+
                     <div className = 'page-two-cards'>
                         <ul>
                             <li>
@@ -181,6 +209,9 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
                     <div className = 'area-right'>
                             <img src = {watcher} />
                         </div>
+
+
+
                         <div className = 'area-left'>
                             <h1>Our Approach to Security</h1>
                             <p>
@@ -229,18 +260,43 @@ At Careful Watchers, we have a unique quirk that sets us apart from other cyber 
                             </ul>
                         </div>
 
+                
+                        
+
                     </div>
 
 
-                    <div className = 'page-two-highlight'>
+{
+                         
+                                isTVisible
+                                &&
+
+                    <motion.div className = 'page-two-highlight'
+                    
+                    initial = {{
+                        marginRight: "-100%"
+                    }}
+                    animate = {{
+                        marginRight : isPc ?`20%` : `5%`
+                        // marginRight: "5%"
+                    }}  
+                    transition = {{
+                        ease : "linear",
+                        duration: 1
+                    }}
+                    
+                    exit = {{
+        
+                    }}
+                    >
                             <h1>High-Performance Solutions</h1>
                         <p>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                             Doloribus quam neque quibusdam corrupti aspernatur
                             corporis alias nisi dolorum expedita veritatis voluptates minima sapiente.
                         </p>
-                    </div>
-
+                    </motion.div>
+                }
                     <div className = 'page-two-grid-area'>
                         <ul className='f-1-ul'>
                             <li id = 'f11'>
@@ -496,13 +552,18 @@ const MoreAbtContent = ({props})=>{
 
     return (
         <>
+        <div className = 'page-two-highlight'>
+
+        
         <p>
                         What does this mean? We believe that cyber security is not just about protecting your systems from external threats, but it's also about protecting your organization from internal vulnerabilities. That's why our services go beyond technical solutions and also address the human factor.
                         </p>
                         <p>
-                        Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.                        </p>
+                        Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.                        
+                        </p>
                         <p>
-                        With our team of certified cyber security consultants, we can help you identify, prioritize, and respond immediately to threats and vulnerabilities in your system. Our collaborative approach involves working closely with you to develop a clear risk management process tailored to your business operations. We provide simple, visual reporting that resonates clearly with business executives while speaking their language.                        </p>
+                        With our team of certified cyber security consultants, we can help you identify, prioritize, and respond immediately to threats and vulnerabilities in your system. Our collaborative approach involves working closely with you to develop a clear risk management process tailored to your business operations. We provide simple, visual reporting that resonates clearly with business executives while speaking their language.                        
+                        </p>
 
                         <p>
                         At Careful Watchers, we are committed to providing you with first-class expertise and resources to deliver the services you deserve. We exercise our greatest asset – intelligence – to continuously innovate cost-effective solutions to dynamic information security needs. With us as your complete security partner, you can trust that we are dependable and committed to urgently responding to all urgent requests.                        
@@ -514,8 +575,9 @@ const MoreAbtContent = ({props})=>{
                          <p>
                          Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.
                          </p>
+                         </div>
 
         </>
     )
 }
-export {SecondPage, ThirdDiv, DarkDiv}
+export {SecondPage, ThirdDiv, DarkDiv, MoreAbtContent}

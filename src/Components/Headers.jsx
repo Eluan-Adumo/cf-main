@@ -124,25 +124,25 @@ const HeaderNav = ({ setShowMobileNav }) => {
   return (
     <>
       <ul>
-        <li onClick={handleClick}>
-          <Link to='/'>Home</Link>
+        <li>
+          <Link to='/' onClick={handleClick}>Home</Link>
         </li>
-        <li onClick={handleClick}>
-          <Link to='/about'>About</Link>
+        <li>
+          <Link to='/about' onClick={handleClick}>About</Link>
         </li>
-        <li onClick={handleClick}>
-          <Link to='/team'>Team</Link>
+        <li>
+          <Link to='/team' onClick={handleClick}>Team</Link>
         </li>
-        <li onClick={handleClick}>
-          <Link to='/Services'>Services</Link>
-        </li>
-
-        <li onClick={handleClick}>
-          <Link to='/testimonies'>Testimonies</Link>
+        <li>
+          <Link to='/Services' onClick={handleClick}>Services</Link>
         </li>
 
-        <li onClick={handleClick}>
-          <Link to='/contactus'>Contact Us</Link>
+        <li>
+          <Link to='/testimonies' onClick={handleClick}>Testimonies</Link>
+        </li>
+
+        <li>
+          <Link to='/contactus'  onClick={handleClick}>Contact Us</Link>
         </li>
       </ul>
     </>

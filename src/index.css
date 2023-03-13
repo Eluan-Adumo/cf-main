@@ -482,16 +482,7 @@ button {
   font-family: 'Roboto-Light';
 }
 
-.testimonials-main-area {
-  display: block;
-  width: 90%;
-  margin: 0px auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  overflow-x: hidden;
-  border: 0px solid white;
-  padding-top: 5%;
-}
+
 
 .each-test-main-content {
   display: block;
@@ -1130,7 +1121,16 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
-  
+  .testimonials-main-area {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+    border: 0px solid white;
+    padding-top: 5%;
+  }
 
   .small-hero {
     display: block;
@@ -1787,6 +1787,17 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+
+  .testimonials-main-area {
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow-x: scroll;
+  border: 0px solid white;
+  padding-top: 5%;
+}
   .small-hero {
     display: block;
     float: left;
@@ -2473,10 +2484,14 @@ footer {
   .testimonials-main-area ul {
     padding-top: 5%;
     display: grid;
-    width: 100%;
-    grid-template-columns: auto;
-    row-gap: 40px;
+    width: 300%;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
     list-style-type: none;
+  }
+
+  .testimonials-main-area ul li{
+    width: 100%;
   }
 
   .fourth-up {

@@ -4,6 +4,7 @@ import { SmallHeader, BiggerHeader } from '../Components/Headers';
 import Footer from '../Components/Footer';
 import { ThirdDiv, DarkDiv } from '../Components/SecondPage';
 import Testimonials from '../Components/Testimonials';
+import {MoreAbtContent} from "../Components/SecondPage";
 const About = () => {
   return (
     <>
@@ -11,6 +12,7 @@ const About = () => {
       <ThirdDiv />
       {/* <DarkDiv />
       <Testimonials /> */}
+      <MoreAbtContent  />
       <Footer />
     </>
   );

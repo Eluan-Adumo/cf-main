@@ -42,7 +42,9 @@ const Hero = () =>{
                         <input type = 'button' className = 'g-started' value = 'Get Quote' />
 
                         </Link>
-                        <input type = 'button' value = 'About us' className = 'abt-us' />
+                        <Link to = '/about'>
+                                <input type = 'button' value = 'About us' className = 'abt-us' />
+                        </Link>
                     </span>
                 </div>
 

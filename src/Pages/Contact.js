@@ -24,7 +24,7 @@ const Contact = () => {
               </center>
               <p className='loc-main'>DUBLIN IRELAND</p>
               <p>Tyrellstown Dublin, Ireland</p>
-              <p className='add-mail'>Email: carefulwatcherz@gmail.com</p>
+              <p className='add-mail'>Email: carefulwatchers@gmail.com</p>
             </div>
           </div>
           <div className='f-map'>
@@ -43,6 +43,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          <div id = "f-map"></div>
           {/* <div className='s-address'>
             <div className='add-content'>
               <center>

@@ -2527,9 +2527,10 @@ footer {
     margin-bottom: 3%;
     display: grid;
     grid-template-columns: auto auto;
-    column-gap: 20px;
-    row-gap: 30px;
+    column-gap: 40px;
+    row-gap: 10px;
     color: white;
+    font-size: 15px;
   }
 
   .hero-btn-play-twitt {
@@ -2627,4 +2628,37 @@ footer {
   /* background: rgb(255, 239, 242); */
   border: 0px solid white;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.pop-up{
+  display: block;
+  width: 100vw;
+  margin: 0px auto;
+  height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  background: rgba(0 ,0, 0, 0.7);
+  z-index: 1000;
+  top: 0;
+
+}
+.b-arr{
+  background: transparent;
+  color: black;
+  font-size: 30px;
+  border: 0px solid white;
+}
+.pop-up-content{
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  height: 90%;
+  background: white;
+  overflow-y: scroll;
+  border: 0px solid white;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 2%;
 }

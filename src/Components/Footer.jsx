@@ -397,6 +397,15 @@ const Footer = () =>{
 
            
                </section>
+
+               <div className = 'post-footer'>
+                <div className = 'pf-left'>
+                Copyright @2023 Careful Watchers. All Rights Reserved.
+                </div>
+                <div className = 'pf-right'>
+                Terms & Conditions &mdash; Privacy Policy
+                </div>
+            </div> 
             </footer>
             {/* <div className = 'post-footer'>
                 <div className = 'pf-left'>

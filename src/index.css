@@ -629,7 +629,8 @@ button {
 }
 
 footer {
-  display: block;
+  display: grid;
+  grid-template-columns: auto;
   float: left;
   width: 100%;
   min-height: 40vh;
@@ -637,7 +638,8 @@ footer {
     url('resources/images/footer-bg-1-1-1-1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  bottom: 0;
+  bottom: 0px;
+  position: relative;
   clear: both;
 }
 
@@ -902,15 +904,7 @@ footer {
 .each-tm-cards .t-picture-side img {
   max-width: 100%;
 }
-.t-role-side {
-  display: block;
-  width: 98%;
-  margin: 0px auto;
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
-}
+
 .t-role-side p {
   color: crimson;
   font-family: "Roboto-Light";
@@ -1119,6 +1113,15 @@ footer {
 }
 
 @media screen and (min-width: 600px) {
+  .t-role-side {
+    display: block;
+    width: 98%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  }
   .each-card {
     height: 250px;
     background: #ffe5ea;
@@ -1793,6 +1796,18 @@ footer {
 
 @media screen and (max-width: 600px) {
 
+  .t-role-side {
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-end; */
+    width: 98%;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 120px;
+    /* box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2); */
+  }
   .each-card {
     min-height: 250px;
     background: #ffe5ea;
@@ -2067,8 +2082,9 @@ footer {
   .team-cards {
     display: grid;
     width: 100%;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     row-gap: 20px;
+    column-gap: 20px;
     margin-top: 40px;
   }
 

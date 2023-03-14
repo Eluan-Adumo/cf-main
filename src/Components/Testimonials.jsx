@@ -234,36 +234,55 @@ const FourthPath = ()=>{
                                         <h1>
                                         24/7 Cybersecurity Operations
                                         </h1>
-                                        <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                                        dolore magna aliqua. Quis ipsum suspendisse.
+                                        <p style = {{
+                                            fontSize: "80%"
+                                        }}>
+                                        Our goal of 24/7 cybersecurity operations is to provide a layered defense approach to protect against cyber threats and to minimize the impact of security incidents. With these operations in place, organizations can detect and respond to security incidents quickly, minimize damage, and prevent potential breaches, data theft, or unauthorized access to their systems and data.                       
                                         </p>
                                         <ul>
-                                            <li>
+                                            <li style = {{
+                                            fontSize: "80%"
+                                        }}>
                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span>24/7 Hours Services
                                             </li>
-                                            <li>
+                                            <li style = {{
+                                            fontSize: "80%"
+                                        }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Human Support</span>
                                             </li>
-                                            <li>
+                                            <li style = {{
+                                            fontSize: "80%"
+                                        }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>SIEM Threat Detection</span>
                                             </li>
-                                            <li>
+                                            <li style = {{
+                                            fontSize: "80%"
+                                        }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Managed Security for SMEs</span>
                                             </li>
-                                            <li>
+                                            <li style = {{
+                                            fontSize: "80%"
+                                        }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Security Management</span>
                                             </li>
-                                            <li>
+                                            <li style = {{
+                                            fontSize: "80%"
+                                        }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Manual Website Penetration</span>
                                             </li>
-                                            <li>
+                                            <li style = {{
+                                            fontSize: "80%"
+                                        }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Encryption of Sensitive data.</span>
                                             </li>
-                                            <li>
+                                            <li style = {{
+                                            fontSize: "80%"
+                                        }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Provide Security Services</span>
                                             </li>
-                                            <li>
+                                            <li style = {{
+                                            fontSize: "80%"
+                                        }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>System Updates</span>
                                             </li>
 
@@ -279,9 +298,9 @@ const FourthPath = ()=>{
                                         <h1>
                                         Latest News From Blog
                                         </h1>
-                                        <p>
+                                        {/* <p>
 Comming Soon
-                                        </p>
+                                        </p> */}
                                     </div>
 
                                     <div className = 'f-d-cards'>

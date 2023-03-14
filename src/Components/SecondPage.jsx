@@ -15,6 +15,10 @@ import {HiDocumentText} from "react-icons/hi";
 import {AiOutlineMonitor} from "react-icons/ai";
 import {MdKeyboardDoubleArrowRight} from "react-icons/md"
 import {motion} from "framer-motion";
+import client1 from "../resources/images/astro.png";
+import client2 from "../resources/images/namecheap.png";
+import client3 from "../resources/images/splunk.png";
+import client4 from "../resources/images/cyber-ireland.png";
 const SecondPage = ()=>{
     const [isNVisible, setNVisible] = useState(false);
     const [isTVisible, setIsTVisible] = useState(false);
@@ -449,7 +453,7 @@ const SecondPage = ()=>{
                 </section>
             </section>
             <DarkDiv />
-            <ThirdDiv showAbout = {false} showInitial= {true} coreValues = {false} showCards = {true}/>
+            <ThirdDiv showAbout = {false} showInitial= {false} coreValues = {false} showCards = {true}/>
             <Testimonials />
         </>
     )
@@ -642,7 +646,7 @@ const ThirdDiv = (props)=>{
 }
 
 
-
+                    <ThemesRoller />
 
 
                       <div className = 'page-two-highlight'>
@@ -869,5 +873,57 @@ const MoreAbtContent = ({props})=>{
 
         </>
     )
+}
+
+
+const ThemesRoller = ()=>{
+    const RollerData = [{
+                icon : client1,
+                companyName : "AstroSoft Groups",
+    },
+    {
+        icon : client2,
+        companyName : "Name Cheap"
+    },
+        {
+            icon : client3,
+            companyName : 'Splunk'
+        },
+
+        {
+            icon : client4,
+            companyName: "Cyber Ireland"
+        }
+];
+
+
+const RollerItems = RollerData.map(item=>{
+    const iconUrl =  `${item.icon}`;
+        return<>
+            <li>
+                <div className = 'roller-icons-side'>
+                    <center><img src = {iconUrl} /></center>
+                </div>
+                <div className = 'roller-text-side'>
+                    <center>
+                        {item.companyName}
+                    </center>
+                </div>
+            </li>
+        </>
+});
+
+
+    return(
+        <>
+        <div className = 'rollers'>
+
+        <ul>
+                {RollerItems}
+            </ul>
+        </div>
+
+        </>
+    );
 }
 export {SecondPage, ThirdDiv, DarkDiv, MoreAbtContent}

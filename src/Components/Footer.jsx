@@ -289,6 +289,28 @@ const Footer = () =>{
             <footer>
                
                <section className = 'footer-content'>
+
+               <div>
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><span className = 'f-icon-side'>
+                                    <MdKeyboardDoubleArrowRight />
+                                </span><Link to = '/about'>About Us</Link></li>
+                            <li><span className = 'f-icon-side'>
+                                    <MdKeyboardDoubleArrowRight />
+                                </span><Link to = '/pricing'>Services</Link></li>
+                            <li><span className = 'f-icon-side'>
+                                    <MdKeyboardDoubleArrowRight />
+                                </span><Link to = '/testimonials'>Testimonials</Link></li>
+                            <li><span className = 'f-icon-side'>
+                                    <MdKeyboardDoubleArrowRight />
+                                </span><Link to = '/contactus'>Contact Us</Link></li>
+                            <li><span className = 'f-icon-side'>
+                                    <MdKeyboardDoubleArrowRight />
+                                </span><Link to = '/team'>Team</Link></li>
+                        </ul>
+                    </div>  
+
                     <div>
                         <h3>Contact Info</h3>
                         <ul>
@@ -348,26 +370,7 @@ const Footer = () =>{
                         </ul>
                     </div>     */}
 
-<div>
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><span className = 'f-icon-side'>
-                                    <MdKeyboardDoubleArrowRight />
-                                </span><Link to = '/about'>About Us</Link></li>
-                            <li><span className = 'f-icon-side'>
-                                    <MdKeyboardDoubleArrowRight />
-                                </span><Link to = '/pricing'>Services</Link></li>
-                            <li><span className = 'f-icon-side'>
-                                    <MdKeyboardDoubleArrowRight />
-                                </span><Link to = '/testimonials'>Testimonials</Link></li>
-                            <li><span className = 'f-icon-side'>
-                                    <MdKeyboardDoubleArrowRight />
-                                </span><Link to = '/contactus'>Contact Us</Link></li>
-                            <li><span className = 'f-icon-side'>
-                                    <MdKeyboardDoubleArrowRight />
-                                </span><Link to = '/team'>Team</Link></li>
-                        </ul>
-                    </div>    
+  
                     <div>
                         
                         <ul>

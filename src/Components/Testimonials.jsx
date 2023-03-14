@@ -260,11 +260,11 @@ const FourthPath = ()=>{
                                         }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Managed Security for SMEs</span>
                                             </li>
-                                            <li style = {{
+                                            {/* <li style = {{
                                             fontSize: "80%"
                                         }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Security Management</span>
-                                            </li>
+                                            </li> */}
                                             <li style = {{
                                             fontSize: "80%"
                                         }}>
@@ -346,7 +346,16 @@ employees can often be the weakest link in a company's cybersecurity measures
                                             </div>
                                         </div>
                                     </div>
-                                </div> 
+                                </div>
+
+                                <center><br />
+                                <p style ={{
+                                    display: "block",
+                                    marginTop: "10px"
+                                }}>
+                                        <Link to = '/blog#blog1' className = 'quote-btn-2'>Our Blog</Link>
+                                </p>
+                                    </center> 
                     </section>
             </section>
         </>

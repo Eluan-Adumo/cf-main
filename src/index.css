@@ -1860,27 +1860,33 @@ footer {
     background-position: center;
   }
   .tope-daisy {
-    background-image: url('resources/images/PHOTO-2023-02-20-13-52-14_1.jpg');
+    background-color:rgba(0, 0, 0, 0.04);
+    background-image: url('resources/images/PHOTO-2023-02-20-13-52-14_1-removebg-preview.png');
   }
 
   .tony-obi {
-    background-image: url('resources/images/PHOTO-2023-02-21-13-44-02.jpg');
+    background-color:rgba(0, 0, 0, 0.04);
+    background-image: url('resources/images/PHOTO-2023-02-21-13-44-02-removebg-preview.png');
   }
 
   .dabotubo-briggs {
-    background-image: url('resources/images/datubo.png');
+    background-color:rgba(0, 0, 0, 0.04);
+    background-image: url('resources/images/png_20230222_164718_0000__1_-removebg-preview.png');
   }
 
   .francis {
-    background-image: url('resources/images/PHOTO-2023-02-20-13-52-14.jpg');
+    background-color:rgba(0, 0, 0, 0.04);
+    background-image: url('resources/images/PHOTO-2023-02-20-13-52-14-removebg-preview.png');
   }
 
   .Ifeoluwa-Oloyede {
-    background-image: url('resources/images/ifeolowa.png');
+    background-color:rgba(0, 0, 0, 0.04);
+    background-image: url('resources/images/ifeolowa-removebg-preview.png');
   }
 
   .segun-ebenizer {
-    background-image: url('resources/images/pastor.jpg');
+    background-color:rgba(0, 0, 0, 0.04);
+    background-image: url('resources/images/pastor.png');
   }
   .small-hero-content {
     display: block;
@@ -2240,27 +2246,40 @@ footer {
     border-radius: 150px; */
   }
   .tope-daisy {
-    background-image: url('resources/images/PHOTO-2023-02-20-13-52-14_1.jpg');
+    background-color:#25245e;
+    background-size: 120%;
+    background-image: url('resources/images/PHOTO-2023-02-20-13-52-14_1-removebg-preview.png');
   }
 
   .tony-obi {
-    background-image: url('resources/images/PHOTO-2023-02-21-13-44-02.jpg');
+    background-color:#25245e;
+    background-size: 130%;
+    background-image: url('resources/images/PHOTO-2023-02-21-13-44-02-removebg-preview.png');
   }
 
   .dabotubo-briggs {
-    background-image: url('resources/images/datubo.png');
+     background-color:#25245e;
+     background-size: 220%;
+     background-position: center top;
+    background-image: url('resources/images/png_20230222_164718_0000__1_-removebg-preview.png');
   }
 
   .francis {
-    background-image: url('resources/images/PHOTO-2023-02-20-13-52-14.jpg');
+     background-color:#25245e;
+     background-size: 210%;
+    background-image: url('resources/images/PHOTO-2023-02-20-13-52-14-removebg-preview.png');
   }
 
   .Ifeoluwa-Oloyede {
-    background-image: url('resources/images/ifeolowa.png');
+     background-color:#25245e;
+     background-size: 110%;
+    background-image: url('resources/images/ifeolowa-removebg-preview.png');
   }
 
   .segun-ebenizer {
-    background-image: url('resources/images/pastor.jpg');
+     background-color:#25245e;
+     background-size: 150%;
+    background-image: url('resources/images/pastor.png');
   }
 
   .team-cards {

@@ -5,7 +5,14 @@ import test1 from "../resources/images/client1-1-1-1-1.jpg";
 import hacker from "../resources/images/hacker_1-1-1-1-1.jpg";
 import {BsFillCheckSquareFill} from "react-icons/bs";
 
+
+
 const Testimonials = ()=>{
+
+    const ScrollAnimation = ()=>{
+        const _d = document;
+        _d.querySelector(".testimonials-main-area");
+    }
     useEffect(() => {
         window.addEventListener('scroll', windowScrolling);
         return () => window.removeEventListener('scroll', windowScrolling);
@@ -35,7 +42,7 @@ const Testimonials = ()=>{
                 </div>
 
                 <div className = 'testimonials-main-area'>
-                    <ul>
+                    <ul className = 'animate-scroll'>
                         {/* <li>
                             <div className = 'each-test'>
                                

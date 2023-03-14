@@ -1130,7 +1130,7 @@ footer {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
   }
   .each-card {
-    height: 250px;
+    height: 260px;
     background: #ffe5ea;
     width: 100%;
     padding: 5%;
@@ -1370,8 +1370,8 @@ footer {
   .small-header {
     display: grid;
     align-items: center;
-    grid-template-columns: 60% 10%;
-    column-gap: 30%;
+    grid-template-columns: 65% 10%;
+    column-gap: 25%;
     width: 100vw;
     height: 60px;
     position: relative;
@@ -1717,7 +1717,7 @@ footer {
   .page-cards {
     display: grid;
     width: 100%;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
     column-gap: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -2611,6 +2611,11 @@ footer {
 .page-two-highlight h3{
   margin-bottom: 10px;
 }
+
+.animate-scroll{
+  transform: translateX(100%);
+  animation: move 30s linear infinite
+}
 }
 
 
@@ -2703,4 +2708,10 @@ footer {
   border-radius: 10px;
   margin-top: 30px;
   padding: 2%;
+}
+
+
+
+@keyframes move {
+  to { transform: translateX(-100%); }
 }

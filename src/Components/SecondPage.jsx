@@ -670,10 +670,12 @@ const ThirdDiv = (props)=>{
                     coreValues
                     &&
                     
-                    <div className = 'page-cards'>
-                        <div className = 'page-two-highlight'>
+                    <>
+                    <div className = 'page-two-highlight'>
                             <h1>Our Core Values</h1>
                         </div>
+                    <div className = 'page-cards'>
+                        
                         <div className = 'each-card'>
                                 <span className = 'card-icon'>
                                 <BsFillCheckCircleFill />
@@ -734,7 +736,9 @@ const ThirdDiv = (props)=>{
                                 </div>
                         </div> */}
 
-<center>
+
+                    </div>
+                    <center>
 
                     
 <Link to = '/getquote'>
@@ -742,9 +746,8 @@ const ThirdDiv = (props)=>{
 </Link>
 
 </center>
-                    </div>
 
-
+                    </>
                 }
 
                 {

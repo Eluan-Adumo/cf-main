@@ -822,6 +822,14 @@ const ThirdDiv = (props)=>{
                                 </div>
                         </div>
                     </div>
+
+                    <center>
+                                        <Link to = '/getquote' className = 'anim-btn-2' style = {{
+                                            width: "150px",
+                                            height: "40px"
+
+                                        }}> Get Started</Link>
+                                        </center>
                      </>
                 }
 
@@ -848,9 +856,9 @@ const MoreAbtContent = ({props})=>{
                         <p>
                         Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.                        
                         </p>
-                        <p>
+                        {/* <p>
                         Our 360-Degree Protection approach includes training and awareness programs for employees, phishing simulations, and social engineering assessments to identify potential weaknesses in your organization's processes and policies. By addressing both technical and non-technical aspects of cyber security, we can provide a comprehensive solution that minimizes your risk of a breach or cyber attack.
-                        </p>
+                        </p> */}
 
                         <p>
                         With our team of certified cyber security consultants, we can help you identify, prioritize, and respond immediately to threats and vulnerabilities in your system. Our collaborative approach involves working closely with you to develop a clear risk management process tailored to your business operations. We provide simple, visual reporting that resonates clearly with business executives while speaking their language.

@@ -16,6 +16,7 @@ import { useEffect } from 'react';
 import GetQuote from './Pages/GetQuote';
 import Services from './Pages/Services';
 import FAQ from './Pages/FAQ';
+import BlogPage from './Pages/BlogPage';
 
 import { AnimatePresence } from "framer-motion";
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path='/getquote' element={<GetQuote />} />
           <Route path='/services' element={<Services />} />
           <Route path='/faq' element={<FAQ />} />
+          <Route path='/blog' element={<BlogPage />} />
         </Routes>
       </AnimatePresence>
    </>

@@ -4,7 +4,7 @@ import {AiFillStar} from "react-icons/ai"
 import test1 from "../resources/images/client1-1-1-1-1.jpg";
 import hacker from "../resources/images/hacker_1-1-1-1-1.jpg";
 import {BsFillCheckSquareFill} from "react-icons/bs";
-
+import {Link} from "react-router-dom"
 
 
 const Testimonials = ()=>{
@@ -293,15 +293,22 @@ Comming Soon
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                                 sed do eiusmod tempor incididunt ut labore
                                                 </p>
+
+                                                <p className = 'rmo'>
+                                                    <Link to = '/'>Read more</Link>
+                                                </p>
                                             </div>
                                         </div>
 
-                                        {/* <div className = 'f-d-cards-each c2'>
+                                        <div className = 'f-d-cards-each c2'>
                                                                                         <div className = 'fdcards-text'>
                                                 <h1>Secure Managed IT</h1>
                                                 <p>
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                                 sed do eiusmod tempor incididunt ut labore
+                                                </p>
+                                                <p className = 'rmo'>
+                                                    <Link to = '/'>Read more</Link>
                                                 </p>
                                             </div>
                                         </div>
@@ -313,8 +320,11 @@ Comming Soon
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                                 sed do eiusmod tempor incididunt ut labore
                                                 </p>
+                                                <p className = 'rmo'>
+                                                    <Link to = '/'>Read more</Link>
+                                                </p>
                                             </div>
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </div> 
                     </section>

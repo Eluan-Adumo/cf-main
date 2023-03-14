@@ -2943,3 +2943,7 @@ footer {
   z-index: 10000px;
   bottom: 20px;
 }
+
+footer{
+  z-index: -1;
+}

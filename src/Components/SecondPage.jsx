@@ -64,12 +64,13 @@ const SecondPage = ()=>{
 
                         <motion.div className = 'page-two-highlight'
                         initial = {{
-                            marginLeft: "-100%"
+                            // marginLeft: "-100%",
+                            transform: "translateX(-100%)"
                         }}
                         animate = {{
 
                             
-                            marginLeft : isPc ?`20%` : `5%`
+                            transform : isPc ?`translateX(0%)` : `translateX(0%)`
                         }}  
                         transition = {{
                             ease : "linear",

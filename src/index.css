@@ -2231,13 +2231,13 @@ footer {
   .t-picture-side {
     display: block;
     width: 100%;
-    height: 150px;
-    /* clip-path: circle(50%); */
+    height: 140px;
+    clip-path: circle(50%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
-    border: 2px solid #0e0129;
-    border-radius: 100px;
+    /* border: 2px solid #0e0129;
+    border-radius: 150px; */
   }
   .tope-daisy {
     background-image: url('resources/images/PHOTO-2023-02-20-13-52-14_1.jpg');

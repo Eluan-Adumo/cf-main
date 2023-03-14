@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <SmallHero title='About' />
-      <ThirdDiv showAbout = {true} showInitial = {false} coreValues = {true} showCards = {false}/>
+      <ThirdDiv showRoller = {false} showAbout = {true} showInitial = {false} coreValues = {true} showCards = {false}/>
       {/* <DarkDiv />
       <Testimonials /> */}
       

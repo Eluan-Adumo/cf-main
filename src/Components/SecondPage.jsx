@@ -241,7 +241,7 @@ const SecondPage = ()=>{
  </p>
     </div>
 </div>
-</li>
+                            </li>
 
 
 <li>
@@ -282,7 +282,20 @@ const SecondPage = ()=>{
 </div>
 </li>
                         </ul>
+                        <center>
+                            <Link to = '/services' style = {{
+                                display: "block",
+                                color: "white",
+                                background: "crimson",
+                                width: "150px",
+                                marginTop: "20px",
+                                padding: "1rem"
+                            }}>More Services</Link>
+                        </center>
                     </div>
+                    
+
+                    
 
                     <div className = 'pathed-area'>
                     <div className = 'area-right'>
@@ -453,7 +466,7 @@ const SecondPage = ()=>{
                 </section>
             </section>
             <DarkDiv />
-            <ThirdDiv showAbout = {false} showInitial= {false} coreValues = {false} showCards = {true}/>
+            <ThirdDiv showRoller = {true} showAbout = {false} showInitial= {false} coreValues = {false} showCards = {true}/>
             <Testimonials />
         </>
     )
@@ -589,6 +602,7 @@ const ThirdDiv = (props)=>{
     const showInitial = props.showInitial;
     const coreValues = props.coreValues;
     const showCards = props.showCards;
+    const showRoller = props.showRoller;
     return(
         <>
             <section className = 'third-div'>
@@ -645,8 +659,15 @@ const ThirdDiv = (props)=>{
 
 }
 
+{
+    showRoller
 
-                    <ThemesRoller />
+    &&
+
+    <ThemesRoller />
+}
+
+                    
 
 
                       <div className = 'page-two-highlight'>
@@ -926,4 +947,4 @@ const RollerItems = RollerData.map(item=>{
         </>
     );
 }
-export {SecondPage, ThirdDiv, DarkDiv, MoreAbtContent}
+export {SecondPage, ThirdDiv, DarkDiv, ThemesRoller, MoreAbtContent}

@@ -1130,11 +1130,22 @@ footer {
 
 @media screen and (min-width: 600px) {
 
+  .page-two-cards ul li:hover {
+    transition: all 0.5s ease-in-out;
+    background:  crimson;
+    color: white;
+
+  }
+  .page-two-cards ul li:hover h1{
+    color: white;
+  }
+
   .rollers{
     display: block;
     width: 90%;
     margin: 0px auto;
     overflow-x: hidden;
+    padding-top: 2%;
   }
   
   .rollers ul{
@@ -1891,6 +1902,8 @@ footer {
     font-size: 58px;
     font-family: "bold";
     line-height: 80px;
+    transform: translateX(0%);
+    animation: moveOnce 1s linear;
   }
 
   .hero-left-buttons {
@@ -2420,6 +2433,9 @@ footer {
     font-weight: bolder;
     font-size: 35px;
     font-family: "bold";
+    transform: translateX(0%);
+    animation: moveOnce 1s linear;
+  
   }
 
   .hero-left-buttons {
@@ -2479,6 +2495,17 @@ footer {
     padding-bottom: 20px;
 
   }
+
+  .page-two-cards ul li:hover {
+    transition: all 0.5s ease-in-out;
+    background:  crimson;
+    color: white;
+
+  }
+  .page-two-cards ul li:hover h1{
+    color: white;
+  }
+
 
   #items{
     display: grid;
@@ -2867,6 +2894,11 @@ footer {
 
 @keyframes move {
   to { transform: translateX(-100%); }
+}
+
+@keyframes moveOnce {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0%); }
 }
 
 .rmo a{

@@ -288,40 +288,41 @@ Comming Soon
                                         <div className = 'f-d-cards-each c1'>
                                             
                                             <div className = 'fdcards-text'>
-                                                <h1>Secure Managed IT</h1>
+                                                <h1>Managed Security</h1>
                                                 <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                                sed do eiusmod tempor incididunt ut labore
+                                                While employee awareness is a critical part of cybersecurity for SMEs, it's not the only
+solution. SMEs also need to have robust security measures in place to protect against cyber
+threats.
                                                 </p>
 
                                                 <p className = 'rmo'>
-                                                    <Link to = '/'>Read more</Link>
+                                                    <Link to = '/blog#blog3'>Read more</Link>
                                                 </p>
                                             </div>
                                         </div>
 
                                         <div className = 'f-d-cards-each c2'>
-                                                                                        <div className = 'fdcards-text'>
-                                                <h1>Secure Managed IT</h1>
+                                        <div className = 'fdcards-text'>
+                                                <h1>Employee Awareness</h1>
                                                 <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                                sed do eiusmod tempor incididunt ut labore
+                                                One of the biggest cybersecurity threats for SMEs is their own employees. Unfortunately,
+employees can often be the weakest link in a company's cybersecurity measures
                                                 </p>
                                                 <p className = 'rmo'>
-                                                    <Link to = '/'>Read more</Link>
+                                                    <Link to = '/blog#blog2'>Read more</Link>
                                                 </p>
                                             </div>
                                         </div>
                                         
                                         <div className = 'f-d-cards-each c3'>
                                                                                         <div className = 'fdcards-text'>
-                                                <h1>Secure Managed IT</h1>
+                                                <h1>Cyber Security For Businesses</h1>
                                                 <p>
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                                sed do eiusmod tempor incididunt ut labore
+                                                One of the biggest cybersecurity threats for SMEs is their own employees. Unfortunately,
+employees can often be the weakest link in a company's cybersecurity measures
                                                 </p>
                                                 <p className = 'rmo'>
-                                                    <Link to = '/'>Read more</Link>
+                                                    <Link to = '/blog#blog1'>Read more</Link>
                                                 </p>
                                             </div>
                                         </div>

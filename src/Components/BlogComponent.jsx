@@ -34,10 +34,10 @@ const BlogComponent = () =>{
 
 
 const BlogSoup = () =>{
-
+    const date = new Date().toDateString();
     const blogData = [{
         title : 'Cyber Security for Businesses',
-        date : 'Nov 1st',
+        date : date,
         content : `As the digital landscape continues to expand, cybersecurity has become an essential aspect
         of business operations, particularly for small and medium-sized enterprises (SMEs).
        
@@ -70,7 +70,7 @@ protect your business.
     }
 ,{
     title : 'Employee Awareness',
-    date : 'Nov 2nd',
+    date : date,
     content : `By the end of this post, you will have a better understanding of the
     importance of cybersecurity measures for SMEs and how to take proactive measures to
     protect your business.
@@ -98,21 +98,21 @@ To prevent this from happening, it's crucial for SMEs to focus on employee aware
 critical part of their cybersecurity strategy. Here are some tips to enhance employee
 awareness:
 
-● Regular Training: Providing regular training on cybersecurity best practices is an
+Regular Training: Providing regular training on cybersecurity best practices is an
 effective way to ensure that employees are aware of potential threats and how to
 avoid them. This training could include topics such as password hygiene, recognizing
 phishing emails, and how to avoid malware attacks.
 
-● Simulated Phishing Attacks: To test employee awareness, SMEs can conduct
+Simulated Phishing Attacks: To test employee awareness, SMEs can conduct
 simulated phishing attacks to see if employees can spot the difference between a
 legitimate and a fake email. This helps to identify areas where additional training
 may be required.
 
-● Clear Policies: Clear policies on the use of personal devices for work purposes,
+Clear Policies: Clear policies on the use of personal devices for work purposes,
 access to company networks, and the handling of sensitive data can help employees
 to understand their role in maintaining cybersecurity.
 
-● Reporting Suspicious Activity: Encouraging employees to report any suspicious
+Reporting Suspicious Activity: Encouraging employees to report any suspicious
 activity or potential threats they come across can help SMEs to identify and address
 any potential threats before they become more significant problems.
 By enhancing employee awareness, SMEs can reduce the risk of data breaches caused by
@@ -122,16 +122,38 @@ human error, and better protect their sensitive data from cybercriminals.
     image: blog2        
 },
 {
-    title : 'First Blog',
-    date : 'Nov 1st',
-    content : `Lorem ipsum dolor sit amet sed, consectetur adipiscing elit
-    Lorem ipsum dolor sit amet sed, consectetur adipiscing elit
-    Lorem ipsum dolor sit amet sed, consectetur adipiscing elit
-    Lorem ipsum dolor sit amet sed, consectetur adipiscing elit
-    Lorem ipsum dolor sit amet sed, consectetur adipiscing elit
-    Lorem ipsum dolor sit amet sed, consectetur adipiscing elit
-    Lorem ipsum dolor sit amet sed, consectetur adipiscing elit`,
-    author : 'Kelvin Haris',
+    title : 'Managed Security',
+    date : date,
+    content : `While employee awareness is a critical part of cybersecurity for SMEs, it's not the only
+    solution. SMEs also need to have robust security measures in place to protect against cyber
+    threats. One effective way to do this is through managed security services.
+    Managed security involves outsourcing the management of a company's security systems to
+    a third-party provider. This provider is responsible for implementing, maintaining, and
+    monitoring the security systems to ensure that they are working effectively. This can
+    include things like firewall management, intrusion detection, and vulnerability scanning.
+    There are several benefits of using managed security services for SMEs, including:
+    
+     Expertise: Managed security providers have specialized expertise and experience in
+    cybersecurity, which SMEs may not have in-house. This means that SMEs can benefit
+    from the latest security technologies and techniques without having to invest in
+    them themselves.
+    
+     Cost-Effective: Managed security can be more cost-effective than building and
+    maintaining an in-house security team. SMEs can outsource their security needs to a
+    provider and pay a fixed fee for the service, rather than having to invest in expensive
+    security infrastructure and personnel.
+    
+     24/7 Monitoring: Managed security providers offer round-the-clock monitoring and
+    response to security threats. This means that SMEs can be confident that their
+    systems are being monitored and protected, even outside of business hours.
+    
+     Scalability: Managed security services can be scaled up or down depending on the
+    needs of the SME. This means that SMEs can adjust their security services as their
+    business grows or changes.
+    By using managed security services, SMEs can better protect themselves from cyber
+    threats, without having to invest in expensive security infrastructure or hire additional
+    staff. It's an effective way for SMEs to strengthen their cybersecurity posture and ensure
+    that they can focus on running their business, rather than worrying about security threats.`,
     image: blog3        
 }]
 

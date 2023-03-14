@@ -774,10 +774,7 @@ const ThirdDiv = (props)=>{
 
                                     </h1>
                                     <p>
-                                    Lorem ipsum dolor sit 
-                                    amet, consectetur 
-                                    adipiscing elit, 
-                                    sed do eiusmod tempor
+                                    Our prestigious customers are able to connect to a service that meets their needs.
                                     </p>
                                 </div>
                         </div>
@@ -791,10 +788,8 @@ const ThirdDiv = (props)=>{
 
                                     </h1>
                                     <p>
-                                    Lorem ipsum dolor sit 
-                                    amet, consectetur 
-                                    adipiscing elit, 
-                                    sed do eiusmod tempor
+                                    our clients interact with a member of our team during a live Zoom onboarding. We respond to any questions you may have and adjust the service
+                                     to meet your specific security requirements.
                                     </p>
                                 </div>
                         </div>
@@ -808,10 +803,7 @@ const ThirdDiv = (props)=>{
 
                                     </h1>
                                     <p>
-                                    Lorem ipsum dolor sit 
-                                    amet, consectetur 
-                                    adipiscing elit, 
-                                    sed do eiusmod tempor
+                                    Our Clients are presented with friendly and standardized terms to guide all operations and business relationships with us.
                                     </p>
                                 </div>
                         </div>
@@ -825,10 +817,7 @@ const ThirdDiv = (props)=>{
 
                                     </h1>
                                     <p>
-                                    Lorem ipsum dolor sit 
-                                    amet, consectetur 
-                                    adipiscing elit, 
-                                    sed do eiusmod tempor
+                                    After all requirements have been met, our team of professionals will engage with the client's request and begin security operations.
                                     </p>
                                 </div>
                         </div>

@@ -1156,7 +1156,7 @@ footer {
     column-gap: 20px;
     list-style-type: none;
     transform: translateX(100%);
-    animation: move 30s linear infinite
+    animation: move 20s linear infinite
   
   }
   
@@ -2835,7 +2835,7 @@ footer {
 
 .animate-scroll{
   transform: translateX(100%);
-  animation: move 30s linear infinite
+  animation: move 20s linear infinite
 
 }
 }

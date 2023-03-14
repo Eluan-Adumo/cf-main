@@ -3,6 +3,7 @@ import {MdPhoneInTalk} from "react-icons/md";
 import {FiMail} from "react-icons/fi";
 import {BiLocationPlus} from "react-icons/bi";
 import { Link } from "react-router-dom";
+import {BiUpArrowAlt} from "react-icons/bi";
 import {MdKeyboardDoubleArrowRight} from "react-icons/md"
 
 import {BiArrowBack} from "react-icons/bi"
@@ -290,6 +291,15 @@ const Footer = () =>{
 
             <footer>
 
+            <button className = 'floatingBtn' onClick = {()=>{
+                  window.scroll({
+                    top: 0, 
+                    left: 0, 
+                    behavior: 'smooth' 
+                   });
+                }}>
+                        <BiUpArrowAlt />
+                </button>
                
                <section className = 'footer-content'>
 

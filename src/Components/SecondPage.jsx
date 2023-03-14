@@ -776,7 +776,7 @@ const ThirdDiv = (props)=>{
                     <center>
 
                     
-<Link to = '/getquote'>
+<Link to = '/contactus'>
             <input type ='button' value = 'Contact Us' className ='anim-btn'/>
 </Link>
 

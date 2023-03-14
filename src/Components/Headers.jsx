@@ -36,7 +36,13 @@ const Navbar = () => {
            showMobileNav={showMobileNav}/>
       </div>
     </nav>
-                <button className = 'floatingBtn' >
+                <button className = 'floatingBtn' onClick = {()=>{
+                  window.scroll({
+                    top: 0, 
+                    left: 0, 
+                    behavior: 'smooth' 
+                   });
+                }}>
                         <BiUpArrowAlt />
                 </button>
     </>

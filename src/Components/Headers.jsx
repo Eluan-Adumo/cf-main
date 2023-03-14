@@ -142,9 +142,9 @@ const HeaderNav = ({ setShowMobileNav }) => {
           <Link to='/Services' onClick={handleClick}>Services</Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link to='/testimonies' onClick={handleClick}>Testimonies</Link>
-        </li>
+        </li> */}
 
         <li>
           <Link to='/contactus'  onClick={handleClick}>Contact Us</Link>

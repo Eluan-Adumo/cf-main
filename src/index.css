@@ -95,9 +95,9 @@ footer a {
   width: 90%;
   margin: 0px auto;
 }
-body{
+/* body{
   overflow-x: hidden;
-}
+} */
 /* @media screen and(max-width: 600px) {
   .quotations input{
 
@@ -131,6 +131,7 @@ html {
 
 body {
   background: white;
+  overflow-x: hidden;
 }
 
 .wrapper {

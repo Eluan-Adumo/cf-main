@@ -295,15 +295,15 @@ const FourthPath = ()=>{
 
                                 <div className = 'fourth-down'>
                                     <div className = 'fourth-title'>
-                                        <h1>
+                                        {/* <h1>
                                         Latest News From Blog
-                                        </h1>
+                                        </h1> */}
                                         {/* <p>
 Comming Soon
                                         </p> */}
                                     </div>
 
-                                    <div className = 'f-d-cards'>
+                                    {/* <div className = 'f-d-cards'>
                                         <div className = 'f-d-cards-each c1'>
                                             
                                             <div className = 'fdcards-text'>
@@ -345,9 +345,9 @@ employees can often be the weakest link in a company's cybersecurity measures
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
-
+{/* 
                                 <center><br />
                                 <p style ={{
                                     display: "block",
@@ -355,7 +355,7 @@ employees can often be the weakest link in a company's cybersecurity measures
                                 }}>
                                         <Link to = '/blog#blog1' className = 'quote-btn-2'>Our Blog</Link>
                                 </p>
-                                    </center> 
+                                    </center>  */}
                     </section>
             </section>
         </>

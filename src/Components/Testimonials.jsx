@@ -260,11 +260,11 @@ const FourthPath = ()=>{
                                         }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Managed Security for SMEs</span>
                                             </li>
-                                            {/* <li style = {{
+                                            <li style = {{
                                             fontSize: "80%"
                                         }}>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Security Management</span>
-                                            </li> */}
+                                            </li>
                                             <li style = {{
                                             fontSize: "80%"
                                         }}>
@@ -293,17 +293,15 @@ const FourthPath = ()=>{
                                     </div>
                                 </div>
 
-                                <div className = 'fourth-down'>
+                                {/* <div className = 'fourth-down'>
                                     <div className = 'fourth-title'>
-                                        {/* <h1>
+                                        <h1>
                                         Latest News From Blog
-                                        </h1> */}
-                                        {/* <p>
-Comming Soon
-                                        </p> */}
+                                        </h1>
+
                                     </div>
 
-                                    {/* <div className = 'f-d-cards'>
+                                    <div className = 'f-d-cards'>
                                         <div className = 'f-d-cards-each c1'>
                                             
                                             <div className = 'fdcards-text'>
@@ -345,9 +343,9 @@ employees can often be the weakest link in a company's cybersecurity measures
                                                 </p>
                                             </div>
                                         </div>
-                                    </div> */}
+                                    </div>
                                 </div>
-{/* 
+
                                 <center><br />
                                 <p style ={{
                                     display: "block",

@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import {ImQuotesLeft} from "react-icons/im";
 import {AiFillStar} from "react-icons/ai"
 import test1 from "../resources/images/client1-1-1-1-1.jpg";
@@ -6,6 +6,20 @@ import hacker from "../resources/images/hacker_1-1-1-1-1.jpg";
 import {BsFillCheckSquareFill} from "react-icons/bs";
 
 const Testimonials = ()=>{
+    useEffect(() => {
+        window.addEventListener('scroll', windowScrolling);
+        return () => window.removeEventListener('scroll', windowScrolling);
+      }, []);
+      const windowScrolling = () => {
+        const d = document;
+        const winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        console.log(winScroll);
+        if (winScroll >= 500) {
+              
+              
+      }
+    }
     return (
 
         <>
@@ -211,7 +225,7 @@ const FourthPath = ()=>{
                                 <div className = 'fourth-up'>
                                     <div className = 'left-fourth'>
                                         <h1>
-                                        24/7 Cybersecurity Operation Center
+                                        24/7 Cybersecurity Operations
                                         </h1>
                                         <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
@@ -219,35 +233,33 @@ const FourthPath = ()=>{
                                         </p>
                                         <ul>
                                             <li>
-                                               <span className = 'c-icon-side'><BsFillCheckSquareFill /></span> Managed Web Applications
+                                               <span className = 'c-icon-side'><BsFillCheckSquareFill /></span>24/7 Hours Services
                                             </li>
                                             <li>
-                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Instant Malware Removal</span>
+                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Human Support</span>
                                             </li>
                                             <li>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>SIEM Threat Detection</span>
                                             </li>
                                             <li>
-                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Content Delivery Network</span>
-                                            </li>
-                                            <li>
-                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>24/7 Hours Services</span>
+                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Managed Security for SMEs</span>
                                             </li>
                                             <li>
                                                 <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Security Management</span>
                                             </li>
                                             <li>
-                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Instant Malware Removal</span>
+                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Manual Website Penetration</span>
                                             </li>
                                             <li>
-                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Free Delivery Services</span>
+                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Encryption of Sensitive data.</span>
                                             </li>
                                             <li>
-                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Website Hack Repair</span>
+                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Provide Security Services</span>
                                             </li>
                                             <li>
-                                                <span class = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>Provide Security Services</span>
+                                                <span className = 'c-icon-side'><BsFillCheckSquareFill /></span><span className = 'c-text-side'>System Updates</span>
                                             </li>
+
                                         </ul>
                                     </div>
                                     <div className = 'right-fourth'>

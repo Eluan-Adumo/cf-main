@@ -7,8 +7,12 @@ import {FiSettings} from "react-icons/fi"
 import lockImage from "../resources/images/electronic-img-1-1-1.png";
 import watcher from "../resources/images/approach-img-1-1-1.jpg";
 import {BsFillCheckCircleFill} from "react-icons/bs";
-import Testimonials from './Testimonials'
-import { Link } from 'react-router-dom'
+import {BiPhoneCall} from "react-icons/bi";
+import Testimonials from './Testimonials';
+import {VscTelescope} from "react-icons/vsc";
+import { Link } from 'react-router-dom';
+import {HiDocumentText} from "react-icons/hi";
+import {AiOutlineMonitor} from "react-icons/ai";
 import {MdKeyboardDoubleArrowRight} from "react-icons/md"
 import {motion} from "framer-motion";
 const SecondPage = ()=>{
@@ -16,6 +20,7 @@ const SecondPage = ()=>{
     const [isTVisible, setIsTVisible] = useState(false);
     const [isPc, setIsPc] = useState(false);
     const [shouldDisplay, setShouldDisplay] = useState(false);
+    const [shouldSDisplay, setShouldSDisplay] = useState(false);
     useEffect(() => {
         if(window.innerWidth >=600 ){
             setIsPc(true);
@@ -82,12 +87,14 @@ const SecondPage = ()=>{
 
                     <div className = 'page-two-cards'>
                         <ul>
-                            <li>
+                            {/* <li>
 
                                 <div className = 'grid-content-area'>
-                                    <span className = 'b-icon'>
-                                    <RiCustomerService2Line />
-                                        </span>
+                                        <div>
+                                            <span className = 'b-icon'>
+                                                <RiCustomerService2Line />
+                                            </span>
+                                        </div>
 
                                     <div className = 'grid-content-area-content'>
                                     <h1>Security Consulting</h1>
@@ -123,39 +130,14 @@ const SecondPage = ()=>{
                                     </div>
                                 </div>
                             </li>
-                            {/* <li>
 
-                                <div className = 'grid-content-area'>
-                                    <span className = 'b-icon'><CgWebsite /></span>
-                                    <div className = 'grid-content-area-content'>
-                                        <h1>Risk Assessment</h1>
-                                        <p>
-                                        <span className = 'i-icons-side'>
-                                                <MdKeyboardDoubleArrowRight />
-                                                </span>
-
-                                                <span>
-                                                    Client Infrastructure
-                                                </span>
-                                            </p>
-                                            <p>
-                                            <span className = 'i-icons-side'>
-                                                <MdKeyboardDoubleArrowRight />
-                                                </span>
-
-                                                <span>
-                                                    Identify vulnerabilities
-                                                </span>
-
-                                            </p>
-                                                     
-                                    </div>
-                                </div>
-                            </li> */}
                             <li>
 
                                 <div className = 'grid-content-area'>
+                                <div>
                                 <span className = 'b-icon'><CgWebsite /></span>
+
+                                </div>
                                 <div className = 'grid-content-area-content' id = 'cont-1'>
                                     <h1>Security Awareness Training</h1>
                                     <p>
@@ -184,41 +166,117 @@ const SecondPage = ()=>{
                                     
                                     </div>
                                 </div>
-                            </li>
+                            </li> */}
                             <li>
 
                                 <div className = 'grid-content-area'>
-                                    <span className = 'b-icon'><BsFillBugFill /></span>
+                                <div>
+                                            <span className = 'b-icon'>
+                                                <RiCustomerService2Line />
+                                            </span>
+                                        </div>
                                     <div className = 'grid-content-area-content' id = 'cont-2'>
-                                    <h1>Business Information Security</h1>
+                                    <h1>Security Consulting</h1>
 
-                                    <p>
-                                    <span className = 'i-icons-side'>
+                                    <p><span className = 'i-icons-side'>
                                                 <MdKeyboardDoubleArrowRight />
                                                 </span>
-                                       <span>Data Protection</span>
-                                    </p>
-                                    <p>
-                                    <span className = 'i-icons-side'>
+                                                
+                                                <span className = 'i-t-side'>
+                                                Consulting Service
+                                                </span>
+                                                </p>
+                                            <p> 
+                                            <span className = 'i-icons-side'>
                                                 <MdKeyboardDoubleArrowRight />
                                                 </span>
-                                       <span> Business Continuity Plan (BCP)</span>
-                                    </p>
-                                    <p>
-
-                                    <span className = 'i-icons-side'>
+                                                <span>Identifies Problems</span></p>
+                                            <p>
+                                            <span className = 'i-icons-side'>
                                                 <MdKeyboardDoubleArrowRight />
                                                 </span>
-
-                                                <span>
-                                                    Security Policies
-                                                </span>
-                                    
-<p id = 'r-more' className = 'anim-btn'><Link to = '/services' ><center>Read more</center></Link></p>
+                                                <span>Evaluates Security Issues</span>
+                                         
+                                    <p id = 'r-more' className = 'anim-btn'>
+                                        <Link to = '/services' ><center>Read more</center></Link>
+                                        </p>
                                  </p>
                                     </div>
                                 </div>
                             </li>
+
+                            <li>
+
+<div className = 'grid-content-area'>
+    <div>
+    <span className = 'b-icon'><CgWebsite /></span>
+
+    </div>
+    <div className = 'grid-content-area-content' id = 'cont-2'>
+    <h1>Security Awareness Training</h1>
+
+                            
+    <p>
+
+<span className = 'i-icons-side'>
+            <MdKeyboardDoubleArrowRight />
+            </span>
+
+            <span>
+                Client awareness training.
+            </span>
+
+</p>
+<p>
+<span className = 'i-icons-side'>
+            <MdKeyboardDoubleArrowRight />
+            </span>
+   <span> Client&apos;s mitigation training</span>
+   <p><br /></p>
+<p id = 'r-more' className = 'anim-btn'><Link to = '/services' ><center>Read more</center></Link></p>
+ </p>
+    </div>
+</div>
+</li>
+
+
+<li>
+
+<div className = 'grid-content-area'>
+    <div>
+    <span className = 'b-icon'><BsFillBugFill /></span>
+
+    </div>
+    <div className = 'grid-content-area-content' id = 'cont-2'>
+    <h1>Business Information Security</h1>
+
+    <p>
+    <span className = 'i-icons-side'>
+                <MdKeyboardDoubleArrowRight />
+                </span>
+       <span>Data Protection</span>
+    </p>
+    <p>
+    <span className = 'i-icons-side'>
+                <MdKeyboardDoubleArrowRight />
+                </span>
+       <span> Business Continuity Plan (BCP)</span>
+    </p>
+    <p>
+
+    <span className = 'i-icons-side'>
+                <MdKeyboardDoubleArrowRight />
+                </span>
+
+                <span>
+                    Security Policies
+                </span>
+    
+<p id = 'r-more' className = 'anim-btn'><Link to = '/services' ><center>Read more</center></Link></p>
+ </p>
+    </div>
+</div>
+</li>
                         </ul>
                     </div>
 
@@ -267,9 +325,7 @@ const SecondPage = ()=>{
                                             such as providing cybersecurity awareness training to employees
                                             </p>
                                     </div>
-                                    <span className = 'list-icon-side' onClick = {()=>{
-                                        document.querySelector(".awt-cont").style.minHeight = "220px";
-                                    }}>
+                                    <span className = 'list-icon-side'>
                                         <BsShieldPlus />
                                     </span>
                                 </li> 
@@ -278,10 +334,18 @@ const SecondPage = ()=>{
                                 <div className = 'list-content-side'>
                                             <h2>Implement Robust Security Solutions</h2>
                                             <p>
-                                            Careful Watchers implement robust security solutions to protect our client's IT infrastructure. This can include installing firewalls, intrusion detection and prevention systems, antivirus software, and other security tools
+                                            Careful Watchers implement robust security solutions to protect our client's IT infrastructure. 
+                                            <span style = {{
+                                                display : shouldSDisplay?`inline`: `none`
+                                            }}>
+                                            This can include installing firewalls, intrusion detection and prevention systems, antivirus software, and other security tools
+
+                                            </span>
                                             </p>
                                     </div>
-                                    <span className = 'list-icon-side'>
+                                    <span className = 'list-icon-side'  onClick = {()=>{
+                                        setShouldSDisplay(!shouldSDisplay);
+                                    }}>
                                         <CgFileDocument />
                                     </span>
                                 </li>                                
@@ -587,6 +651,12 @@ const ThirdDiv = (props)=>{
                         At Careful Watchers, we have a unique pattern that sets us apart from other cyber security providers. We call it the "360-Degree Protection" approach.    
 
                         </p>
+                        <center>
+                            <Link to = '/about' style = {{
+                                color: "crimson",
+                                display: showAbout? `none` : `inline`
+                            }}>Read more</Link>
+                        </center>
                                             </div>
 
 {
@@ -680,14 +750,24 @@ const ThirdDiv = (props)=>{
                 {
                     showCards
                     &&
+                    <>
+                    <div className = 'page-two-hightlight'>
+                                <center>
+                                <h1 style = {{
+                                    fontSize: "25px"
+                                }}>How We Work...</h1>
+                                </center>
+                         </div>
+                   
                     <div className = 'page-cards'>
+                        
                         <div className = 'each-card'>
                                 <span className = 'card-icon'>
-                                <FiSettings />
+                                <VscTelescope />
                                 </span>
                                 <div className = 'card-contents'>
                                     <h1>
-                                    24/7 Support And Remote Admit
+                                    Service Identification
 
                                     </h1>
                                     <p>
@@ -700,11 +780,11 @@ const ThirdDiv = (props)=>{
                         </div>
                         <div className = 'each-card'>
                                 <span className = 'card-icon'>
-                                <FiSettings />
+                                <BiPhoneCall />
                                 </span>
                                 <div className = 'card-contents'>
                                     <h1>
-                                    24/7 Support And Remote Admit
+                                    Personalized Onboarding
 
                                     </h1>
                                     <p>
@@ -717,11 +797,11 @@ const ThirdDiv = (props)=>{
                         </div>
                         <div className = 'each-card'>
                                 <span className = 'card-icon'>
-                                <FiSettings />
+                                <HiDocumentText />
                                 </span>
                                 <div className = 'card-contents'>
                                     <h1>
-                                    24/7 Support And Remote Admit
+                                    Terms & Agreement
 
                                     </h1>
                                     <p>
@@ -734,11 +814,11 @@ const ThirdDiv = (props)=>{
                         </div>
                         <div className = 'each-card'>
                                 <span className = 'card-icon'>
-                                <FiSettings />
+                                <AiOutlineMonitor />
                                 </span>
                                 <div className = 'card-contents'>
                                     <h1>
-                                    24/7 Support And Remote Admit
+                                    Monitoring &amp; Support
 
                                     </h1>
                                     <p>
@@ -750,6 +830,7 @@ const ThirdDiv = (props)=>{
                                 </div>
                         </div>
                     </div>
+                     </>
                 }
 
                     
@@ -764,6 +845,7 @@ const MoreAbtContent = ({props})=>{
 
     return (
         <>
+
         <div className = 'page-two-highlight'>
 
         

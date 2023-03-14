@@ -1516,16 +1516,16 @@ footer {
 
   .page-two-cards ul {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 20px;
+    grid-template-columns: auto auto auto;
+    column-gap: 30px;
     list-style-type: none;
   }
 
   .page-two-cards ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    height: 250px;
+    display: grid;
+    grid-template-rows: 20% 60%;
+    row-gap: 20%;
+    height: 330px;
     background: #ffdbe2;
     padding: 10px;
   }
@@ -1542,7 +1542,7 @@ footer {
   
   #r-more{
     margin-top: 10px;
-    background:#25245e;
+    background:crimson;
     
   }
 
@@ -1562,10 +1562,13 @@ footer {
   }
 
   .grid-content-area-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     margin-top: 10px;
     float: left;
     padding-bottom: 2%;
+    bottom: 0px;
   }
   .grid-content-area h1{
     color: #11132d;
@@ -1576,6 +1579,7 @@ footer {
     font-family: 'Roboto-Light';
     line-height: 25px;
     padding-top: 0.5rem;
+    font-size: 13px;
   }
 
   .area-left ul {
@@ -1602,8 +1606,8 @@ footer {
   }
   .testimonials-main-area ul {
     display: grid;
-    width: 200%;
-    grid-template-columns: auto auto auto auto auto auto auto auto;
+    width: 100%;
+    grid-template-columns: auto auto auto;
     column-gap: 20px;
     list-style-type: none;
   }
@@ -2004,6 +2008,7 @@ footer {
     background: url('resources/images/complete-shape-2-1-1-1.png');
     background-repeat: no-repeat;
     background-position: left;
+    background-size: 40%;
   }
   .left-fourth h1 {
     font-size: 30px;

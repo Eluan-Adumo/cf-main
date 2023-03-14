@@ -72,7 +72,8 @@ const Team = () => {
               <div className='t-picture-side segun-ebenizer'></div>
               <div className='t-role-side'>
                 <h2>Segun Ebenizer</h2>
-                <p>Social Media Manager</p>
+                <p>Cyber Security Analyst</p>
+                <p>Business Security</p>
               </div>
             </div>
           </div>

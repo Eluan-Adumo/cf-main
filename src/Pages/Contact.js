@@ -74,6 +74,25 @@ const Contact = () => {
             </div>
           </div> */}
         </section>
+        <div className = 'page-two-highlight'>
+          <center>
+            <p style = {{
+              color: "crimson",
+              fontWieght: "bolder",
+              fontFamily: "Roboto-Regular"
+            }}>
+              Contact us
+            </p>
+          </center>
+          <h1>
+          Drop Us A Message For Any Query
+          </h1>
+          <p>
+            Drop a message with us to enquire about our services, or get any kind of feedback you may need.
+            We are always available to respond to you round the clock.
+
+          </p>
+        </div>
         <section className='contact-lower'>
           <div className='cl-content'>
             <div className='c11'>

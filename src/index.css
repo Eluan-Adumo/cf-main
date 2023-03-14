@@ -1113,8 +1113,8 @@ footer {
   height: 40px;
   border: 1px solid lightgrey;
   outline: none;
-  background-color: lightcyan;
-  font-family: 'light';
+  background-color: #f2f9fc;
+  font-family: 'Roboto-Light';
 }
 
 .c13 textarea {
@@ -1123,8 +1123,8 @@ footer {
   height: 150px;
   resize: none;
   outline: none;
-  background-color: lightcyan;
-  font-family: 'light';
+  background-color: #f2f9fc;
+  font-family: 'Roboto-Light';
   border: 1px solid lightgrey;
 }
 
@@ -1806,6 +1806,7 @@ footer {
     float: left;
     width: 100%;
     text-align: center;
+    font-family: "Roboto-Bold";
   }
 
   .dd-scrolls-header ul {
@@ -2110,13 +2111,14 @@ footer {
     text-align: center;
   }
   .testimonials-title-area h1 {
+    font-family: "bold";
     font-size: 40px;
   }
   .testimonials-title-area p {
     margin-top: 10px;
     color: white;
     line-height: 25px;
-    font-family: 'light';
+    font-family: 'Roboto-Light';
   }
 
   .each-test-triangle {
@@ -2175,9 +2177,11 @@ footer {
     background-size: 40%;
   }
   .left-fourth h1 {
-    font-size: 30px;
+    font-size: 40px;
     margin-bottom: 10px;
     text-align: center;
+    font-family: "bold";
+    font-weight: "bolder";
   }
   .left-fourth p {
     line-height: 25px;
@@ -2657,12 +2661,16 @@ footer {
     text-align: left;
   }
   .dark-div-right h1 {
-    font-size: 30px;
+    font-family: "bold";
+    font-size: 35px;
+    padding: 1%;
+    text-align: center;
   }
 
   .dark-div-right .text-side p {
     line-height: 30px;
     font-family: 'light';
+    text-align: center;
   }
   .dd-scrolls {
     width: 100%;
@@ -2690,6 +2698,12 @@ footer {
     color: white;
     padding: 8px;
     text-align: left;
+    font-family: "Roboto-Bold";
+  }
+
+  .dd-scrolls-header ul li:hover, .dd-scrolls-header ul li:focus{
+    color: crimson;
+    transition: all 0.4s ease;
   }
 
   .dd-scrolls .text-side p {
@@ -2697,6 +2711,7 @@ footer {
     float: left;
     width: 100%;
     margin-bottom: 20px;
+    font-family: "Roboto-Regular";
   }
   .dark-div-left img {
     max-width: 100%;
@@ -2908,3 +2923,23 @@ footer {
   font-size: 90%;
 }
 
+
+
+.floatingBtn{
+  display: block;
+  background: crimson;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 45px;
+  border: 0px solid white;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  position: fixed;
+  font-size: 35px;
+  right:20px;
+  z-index: 10000px;
+  bottom: 20px;
+}

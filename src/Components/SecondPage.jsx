@@ -479,7 +479,17 @@ const DarkDiv = ()=>{
     const[encrypt, setEncrypt] = useState(false);
     const[pacd, setPAc] = useState(false);
     const [backup, setBackup] = useState(false);
+// useEffect(()=>{
+//     focusItem();
+// }, [])
+    const focusItem = () =>{
+        document.querySelector(".dd-scrolls-header ul li").onClick((e)=>{
+            document.querySelector(".dd-scrolls-header ul li").style.color = "white";
+            e.target.style.color = "crimson";
+        });
+    }
 
+    
     return(
         <>
             <section className = 'dark-div'>
@@ -510,7 +520,7 @@ const DarkDiv = ()=>{
                                         setBackup(false);
                                         setPAc(false);
                                     }}
-                                    >Access Control</li>
+                                    >Control</li>
                                     <li 
                                     onClick={()=>{
                                         setPwd(false);
@@ -538,7 +548,7 @@ const DarkDiv = ()=>{
                                         setPAc(true);
 
                                     }}
-                                    >Physical Access</li>
+                                    >Access</li>
                                 </ul>
                                 
                             </div>

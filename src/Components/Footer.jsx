@@ -4,6 +4,7 @@ import {FiMail} from "react-icons/fi";
 import {BiLocationPlus} from "react-icons/bi";
 import { Link } from "react-router-dom";
 import {MdKeyboardDoubleArrowRight} from "react-icons/md"
+
 import {BiArrowBack} from "react-icons/bi"
 
 
@@ -286,7 +287,9 @@ const Footer = () =>{
                 </section>
 
 }
+
             <footer>
+
                
                <section className = 'footer-content'>
 
@@ -401,6 +404,7 @@ const Footer = () =>{
                 }}>Privacy Policy</span>
                 </div>
             </div> 
+
             </footer>
             
         </>

@@ -8,6 +8,7 @@ import { FiMail } from 'react-icons/fi';
 import { BiLocationPlus } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { TfiLinkedin } from 'react-icons/tfi';
+import {BiUpArrowAlt} from "react-icons/bi";
 import logo from "../resources/images/logo.png";
 import {
   FaFacebookSquare,
@@ -22,7 +23,8 @@ const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
-    <nav className='navbar'>
+    <>
+        <nav className='navbar'>
       <SmallHeader />
       <BiggerHeader
         setShowMobileNav={setShowMobileNav}
@@ -34,6 +36,11 @@ const Navbar = () => {
            showMobileNav={showMobileNav}/>
       </div>
     </nav>
+                <button className = 'floatingBtn' >
+                        <BiUpArrowAlt />
+                </button>
+    </>
+
 
   );
 };

@@ -17,12 +17,26 @@ const ServiceComponent = () =>{
     return (
 
         <>
+
+
             <section className = 'small-hero' id = 'serv'>
+
+
                 <section className = 'small-hero-content'>
-                    <h1 className = 'small-hero-title'>Our Services</h1>
+                    <h1 className = 'small-hero-title'>Services</h1>
                 </section>
             </section>
             <section className = 'service-page'>
+            <div className = 'page-two-highlight'>
+            <h1>
+                Our Services
+            </h1>
+
+            <p>
+            we offer a comprehensive range of information security services designed to protect our clients' businesses from a wide range of cyber threats. Our team of experienced professionals has years of experience in the field of cybersecurity and is dedicated to helping our clients stay secure and compliant
+            </p>
+
+        </div>
                 <section className = 'service-page-content'>
                     <div className = 'page-two-highlight'>
                         <center>
@@ -35,7 +49,7 @@ const ServiceComponent = () =>{
                                 border: "0px solid white",
                                 borderRadius: "25px",
                                 textAlign: "center",
-                                marginTop: "200px",
+                                marginTop: "10px",
                                 fontSize: "25px",
                                 lineHeight: "45px"
                             }}>
@@ -50,9 +64,8 @@ const ServiceComponent = () =>{
                         </h1>
 
                         <p className = 'frame-box'>
-                        Careful Watchers Consulting service Identifies problems,
-evaluates security issues, assesses risk, and implements solutions to address
-threats to a Clients computer networks and computer system.
+                        Our certified cybersecurity consultants offer expert advice and guidance to help our clients build and maintain a strong cybersecurity posture. We work closely with clients to develop strategic plans and budgets around their unique 
+                        capabilities, based on models with the highest impact.
 
                         </p>
                        
@@ -76,8 +89,34 @@ threats to a Clients computer networks and computer system.
                         </h1>
 
                         <p className = 'frame-box'>
-                        Careful Watchers will assess Client's IT infrastructure and
-identify vulnerabilities and risks.
+                        Our certified cybersecurity consultants offer expert advice and guidance to help our clients build and maintain a strong cybersecurity posture. We work closely with clients to develop strategic plans and budgets 
+                        around their unique capabilities, based on models with the highest impact.
+<br />
+
+                        </p>
+                        <center>
+<Link to = '/getquote'>
+              <input type = 'button' value = 'Get A Quote' className = 'quote-btn-2' />
+</Link>
+</center>
+</div>
+
+
+<div className = 'page-two-highlight'>
+
+                        <center>
+                            <span className = 's-icons-side'>
+                            <MdNetworkLocked />
+                            </span>
+                            
+                        </center>
+
+                        <h1>
+                            Security Analysis
+                        </h1>
+
+                        <p className = 'frame-box'>
+                        We process and access the security posture of an organization's digital assets, including networks, systems, and applications, to identify vulnerabilities, threats, and risks. The primary goal of our analysis is to determine whether an organization's security controls and measures are effective in protecting against cyber attacks and to recommend improvements where necessary.
 <br />
 
                         </p>
@@ -102,8 +141,7 @@ identify vulnerabilities and risks.
                         </h1>
 
                         <p className = 'frame-box'>
-                        Careful Watchers will configure firewalls, intrusion detection
-and prevention systems to protect Client's network from external and internal
+                        Our network security services are designed to help our clients protect their critical infrastructure, data, and applications from cyber threats. We use a range of tools and technologies to monitor and protect our clients' networks from unauthorized access, malware, and other threats.
 threats.
 <br />
 
@@ -128,8 +166,8 @@ threats.
                         </h1>
 
                         <p className = 'frame-box'>
-                        Careful Watchers will provide 24/7 incident response services
-to mitigate the impact of any cyber security incidents that may occur.
+                        We offer complete security partners, dependable, and committed to urgently responding to all urgent requests. Our incident response services are designed to help our clients quickly and effectively respond to security incidents and minimize the impact on their business. We have a team of experts that can help clients investigate security 
+                        incidents, contain the damage, and prevent future incidents.
 <br />
 
                         </p>
@@ -152,12 +190,11 @@ to mitigate the impact of any cyber security incidents that may occur.
                             
                         </center>
                         <h1>
-                            Service Awareness Training
+                            Security Awareness Training
                         </h1>
 
                         <p className = 'frame-box'>
-                        Careful Watchers will provide 24/7 incident response services
-to mitigate the impact of any cyber security incidents that may occur.
+                        We offer tailored security awareness training programs to educate employees on how to identify and avoid cyber threats. Our training programs are designed to help our clients build a culture of cybersecurity within their organization and promote best practices to reduce the risk of a security breach.
 <br />
 
                         </p>
@@ -182,10 +219,8 @@ to mitigate the impact of any cyber security incidents that may occur.
                         </h1>
 
                         <p className = 'frame-box'>
-                        Careful Watchers is develops and implement an
-organization's information security policies, procedures, and best practices to protect its
-sensitive information assets.
-<br />
+                        Our mission is to protect our clients' company with strategic information security and data privacy services. We have an in-depth experience in cybersecurity and are equipped to locate, evaluate, and treat risks based on the client's business operations. We provide a range of services, including security program development, policy development, and security governance.
+
 
                         </p>
                         <center>
@@ -206,14 +241,11 @@ sensitive information assets.
                         </center>
 
                         <h1>
-                            Penetration Tester
+                            Penetration Testing
                         </h1>
 
                         <p className = 'frame-box'>
-                        Careful Watchers is develops and implement an
-organization's information security policies, procedures, and best practices to protect its
-sensitive information assets.
-<br />
+                        Our network security services are designed to help our clients protect their critical infrastructure, data, and applications from cyber threats. We use a range of tools and technologies to monitor and protect our clients' networks from unauthorized access, malware, and other threats.
 
                         </p>
                         <center>

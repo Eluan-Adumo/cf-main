@@ -578,7 +578,7 @@ button {
   display: block;
   float: left;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .fourth-title {
@@ -3191,4 +3191,18 @@ footer{
     to{
       transform: rotate(360deg);
     }
+  }
+
+
+  .each-blog-text-body h1, .page-two-hightlight h1, .fourth-title h1,.each-blog-sum-text-body h1, .footer-content h3{
+    font-family: "bold";
+  }
+  
+  
+  .each-blog-text-header, .ebtbb, .each-blog-sum a{
+    font-family: "Robot-Regular"
+  }
+
+  .dynamic-header-mobile ul li a{
+    font-family: "Roboto-Light";
   }

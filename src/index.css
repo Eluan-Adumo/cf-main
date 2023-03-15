@@ -3199,7 +3199,7 @@ footer{
   }
   
   
-  .each-blog-text-header, .ebtbb, .each-blog-sum a{
+  .each-blog-text-header, .ebtbb p, .ebtbb a, .each-blog-sum a{
     font-family: "Robot-Regular"
   }
 

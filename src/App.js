@@ -17,6 +17,8 @@ import GetQuote from './Pages/GetQuote';
 import Services from './Pages/Services';
 import FAQ from './Pages/FAQ';
 import BlogPage from './Pages/BlogPage';
+import { Register } from './Pages/accounts';
+import Dashboard from './Pages/Dashboard';
 
 import { AnimatePresence } from "framer-motion";
 function App() {
@@ -46,6 +48,9 @@ function App() {
           <Route path='/services' element={<Services />} />
           <Route path='/faq' element={<FAQ />} />
           <Route path='/blog' element={<BlogPage />} />
+
+          <Route path='/accounts' element={<Register />} />
+          <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
       </AnimatePresence>
    </>

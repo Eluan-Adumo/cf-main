@@ -1,24 +1,34 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import SmallHero from "./SmallHero";
 import Footer from "./Footer";
 import blog1 from "../resources/images/blog1.png";
 import blog2 from "../resources/images/blog2.png";
 import blog3 from "../resources/images/blog3.jpg";
+import axios from "axios";
+import Spinner from "./Spinner";
+import { Link } from "react-router-dom";
+
 // import BlogComponent from "../Components/BlogComponent";
 
 
-const BlogComponent = () =>{
+const BlogComponent = (props) =>{
 
     return (
 
         <>
-           <SmallHero title = 'Blog' />
+           
+           {
+            props.blogType == "summary"? <BlogSum /> :
+           
            <section className = 'blog-all'>
 
            
            <section className = 'blog-frame'>
             <section className = 'blog-blog'>
-                <BlogSoup />
+                
+                      <BlogSoup /> 
+                
+                
             </section>
             <section className = 'blog-highlights'>
             <h1>Highlights</h1>
@@ -26,10 +36,79 @@ const BlogComponent = () =>{
            </section>
 
            </section>
-           <Footer />
+           }
+           
         </>
     )
 }
+
+const BlogSum = () =>{
+    const date = new Date().toDateString();
+
+const [feedBack, setFeedBack] = useState([]);
+const [loading, setLoading] = useState(true);
+const [loadNet, setLoadNet] = useState("loader");
+useEffect(()=>{
+    setTimeout(()=>{
+        fetchArticles();
+    }, 10000);
+    
+})
+async function fetchArticles(){
+
+    
+    await axios.get("http://localhost:1337/api/fetch-records").then(function(response){
+        setFeedBack(response.data);
+        setLoading(false);
+
+    });
+
+
+}
+
+const articleContent = feedBack.map(item=>{
+    const artTitle = item.articleTitle;
+    const artContent = item.articleContent.slice(0, 20);
+    const artImage = item.articlePhoto;
+    const dateU = item.dateUploaded;
+
+    return<>
+
+   
+            <div className = 'each-blog-sum' style = {{
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundImage: `linear-gradient(rgba(0, 0, 50, 0.4), rgba(0, 0, 50, 0.4)),url(${artImage})`
+            }}>
+                
+
+                    <div className = 'each-blog-sum-text-body'>
+                        <h1>{artTitle}</h1>
+                        <div className = 'ebtbb'>
+                            {artContent}
+                            <p>
+                                <Link to = "/blog">Read More</Link>
+                            </p>
+                        </div>
+                    </div>
+
+            </div>
+   
+
+    </>
+    
+});
+
+
+return (
+<>
+
+    {loading ? <center><Spinner /></center> : articleContent}
+
+</>
+);
+}
+
 
 
 
@@ -156,43 +235,101 @@ human error, and better protect their sensitive data from cybercriminals.
     that they can focus on running their business, rather than worrying about security threats.`,
     image: blog3        
 }]
+const [feedBack, setFeedBack] = useState([]);
+const [loading, setLoading] = useState(true);
+const [loadNet, setLoadNet] = useState("loader");
+useEffect(()=>{
+    setTimeout(()=>{
+        fetchArticles();
+    }, 10000);
+    
+})
+async function fetchArticles(){
+
+    
+    await axios.get("http://localhost:1337/api/fetch-records").then(function(response){
+        setFeedBack(response.data);
+        setLoading(false);
+
+    });
 
 
-const blogItems = blogData.map(items=>{
-    const bTitle = `${items.title}`;
-    const bDate = `${items.date}`;
-    const bContent = `${items.content}`;
-    const bAuthor = `${items.author}`;
-    const image = `${items.image}`;
+}
+
+const articleContent = feedBack.map(item=>{
+    const artTitle = item.articleTitle;
+    const artContent = item.articleContent;
+    const artImage = item.articlePhoto;
+    const dateU = item.dateUploaded;
+
     return<>
+
    
-        <div className = 'each-blog'>
-            <div className = 'each-blog-image-area'>
-                <img src = {image} />
-            </div>
-            <div className = 'each-blog-text-area'>
-                <div className = 'each-blog-text-header'>
-                    {bDate}
+            <div className = 'each-blog'>
+                <div className = 'each-blog-image-area' style = {{
+                    height: "300px",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundImage: `linear-gradient(rgba(0, 0, 50, 0.4), rgba(0, 0, 50, 0.4)),url(${artImage})`,
+                    border: "0px solid white",
+                    borderRadius: "10px"
+                }}>
+                    {/* <img src = {artImage} /> */}
                 </div>
-                <div className = 'each-blog-text-body'>
-                    <h1>{bTitle}</h1>
-                    <div className = 'ebtbb'>
-                        {bContent}
+                <div className = 'each-blog-text-area'>
+                    <div className = 'each-blog-text-header'>
+                        {dateU}
+                    </div>
+                    <div className = 'each-blog-text-body'>
+                        <h1>{artTitle}</h1>
+                        <div className = 'ebtbb'>
+                            {artContent}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+   
 
-         </>
+    </>
+    
+});
+// const blogItems = blogData.map(items=>{
+//     const bTitle = `${items.title}`;
+//     const bDate = `${items.date}`;
+//     const bContent = `${items.content}`;
+//     const bAuthor = `${items.author}`;
+//     const image = `${items.image}`;
+
+
+//     return<>
+   
+//         <div className = 'each-blog'>
+//             <div className = 'each-blog-image-area'>
+//                 <img src = {image} />
+//             </div>
+//             <div className = 'each-blog-text-area'>
+//                 <div className = 'each-blog-text-header'>
+//                     {bDate}
+//                 </div>
+//                 <div className = 'each-blog-text-body'>
+//                     <h1>{bTitle}</h1>
+//                     <div className = 'ebtbb'>
+//                         {bContent}
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+
+//          </>
     
 
-});
+// });
 
 
 return (
 <>
 
-    {blogItems}
+    {loading ? <Spinner /> : articleContent}
 
 </>
 );

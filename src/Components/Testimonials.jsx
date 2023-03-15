@@ -5,7 +5,7 @@ import test1 from "../resources/images/client1-1-1-1-1.jpg";
 import hacker from "../resources/images/hacker_1-1-1-1-1.jpg";
 import {BsFillCheckSquareFill} from "react-icons/bs";
 import {Link} from "react-router-dom"
-
+import BlogComponent from './BlogComponent'
 
 const Testimonials = ()=>{
 
@@ -293,7 +293,7 @@ const FourthPath = ()=>{
                                     </div>
                                 </div>
 
-                                {/* <div className = 'fourth-down'>
+                                <div className = 'fourth-down'>
                                     <div className = 'fourth-title'>
                                         <h1>
                                         Latest News From Blog
@@ -302,47 +302,9 @@ const FourthPath = ()=>{
                                     </div>
 
                                     <div className = 'f-d-cards'>
-                                        <div className = 'f-d-cards-each c1'>
-                                            
-                                            <div className = 'fdcards-text'>
-                                                <h1>Managed Security</h1>
-                                                <p>
-                                                While employee awareness is a critical part of cybersecurity for SMEs, it's not the only
-solution. SMEs also need to have robust security measures in place to protect against cyber
-threats.
-                                                </p>
 
-                                                <p className = 'rmo'>
-                                                    <Link to = '/blog#blog3'>Read more</Link>
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <div className = 'f-d-cards-each c2'>
-                                        <div className = 'fdcards-text'>
-                                                <h1>Employee Awareness</h1>
-                                                <p>
-                                                One of the biggest cybersecurity threats for SMEs is their own employees. Unfortunately,
-employees can often be the weakest link in a company's cybersecurity measures
-                                                </p>
-                                                <p className = 'rmo'>
-                                                    <Link to = '/blog#blog2'>Read more</Link>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        
-                                        <div className = 'f-d-cards-each c3'>
-                                                                                        <div className = 'fdcards-text'>
-                                                <h1>Cyber Security For Businesses</h1>
-                                                <p>
-                                                One of the biggest cybersecurity threats for SMEs is their own employees. Unfortunately,
-employees can often be the weakest link in a company's cybersecurity measures
-                                                </p>
-                                                <p className = 'rmo'>
-                                                    <Link to = '/blog#blog1'>Read more</Link>
-                                                </p>
-                                            </div>
-                                        </div>
+                                            <BlogComponent blogType = "summary" />
+                                    
                                     </div>
                                 </div>
 
@@ -353,7 +315,7 @@ employees can often be the weakest link in a company's cybersecurity measures
                                 }}>
                                         <Link to = '/blog#blog1' className = 'quote-btn-2'>Our Blog</Link>
                                 </p>
-                                    </center>  */}
+                                    </center> 
                     </section>
             </section>
         </>

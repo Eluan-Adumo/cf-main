@@ -15,6 +15,7 @@ import {HiDocumentText} from "react-icons/hi";
 import {AiOutlineMonitor} from "react-icons/ai";
 import {MdKeyboardDoubleArrowRight} from "react-icons/md"
 import {motion} from "framer-motion";
+
 import client1 from "../resources/images/astro.png";
 import client2 from "../resources/images/namecheap.png";
 import client3 from "../resources/images/splunk.png";

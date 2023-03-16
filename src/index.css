@@ -2596,7 +2596,7 @@ top: 0;
 
   .small-hero-content {
     display: block;
-    width: 60%;
+    width: 70%;
     margin: 0px auto;
     margin-top: 10%;
     text-align: center;
@@ -3401,4 +3401,13 @@ footer{
     color: crimson;
     border: 0px solid white;
     outline: none;
+  }
+
+
+  .home-title{
+    color: crimson;
+  }
+
+  .square-fill{
+    font-size: 13px;
   }

@@ -30,7 +30,7 @@ const Testimonials = ()=>{
     return (
 
         <>
-        <section className = 'testimonials'>
+        {/* <section className = 'testimonials'>
             <section className = 'testimonials-content'>
                 <div className = 'testimonials-title-area'>
                     <h1>What Client Say About Us</h1>
@@ -43,65 +43,7 @@ const Testimonials = ()=>{
 
                 <div className = 'testimonials-main-area'>
                     <ul className = 'animate-scroll'>
-                        {/* <li>
-                            <div className = 'each-test'>
-                               
-                                <div className = 'each-test-main'>
-                                <center>
-                                    <div className = 'quots'>
-                                    <ImQuotesLeft />
-                                    </div>
-                                </center>
-                                <div className = 'each-test-main-content'>
-                                            <div className = 'each-text-main-content-text'>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam neque quibusdam corrupti aspernatur corporis alias nisi 
-                                            .
-                                            </div>
-                                            <div className = 'each-text-main-content-stars'>
-                                                <AiFillStar /><AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
-                                            </div>
-                                        </div>
-                                </div>
-                                <div className = 'each-test-triangle'>
 
-                                </div>
-                                <div className = 'each-test-holder'>
-                                <img src = {test1} />
-                                    <div className = 'each-test-name-area'>
-                                        <h2>JOHN DOE</h2>
-                                        <p className = 'role'>CEO</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> */}
-
-                        {/* <li>
-                            <div className = 'each-test'>
-                                <div className = 'each-test-main'>
-                                 <center><span className = 'quots'><ImQuotesLeft /></span></center>
-
-                                <div className = 'each-test-main-content'>
-                                            <div className = 'each-text-main-content-text'>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam neque quibusdam corrupti aspernatur corporis alias nisi 
-                                            .
-                                            </div>
-                                            <div className = 'each-text-main-content-stars'>
-                                                <AiFillStar /><AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
-                                            </div>
-                                        </div>
-                                </div>
-                                <div className = 'each-test-triangle'>
-
-                                </div>
-                                <div className = 'each-test-holder'>
-                                    <img src = {test1} />
-                                    <div className = 'each-test-name-area'>
-                                        <h2>JOHN DOE</h2>
-                                        <p className = 'role'>CEO</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> */}
 
                         <li>
                             <div className = 'each-test'>
@@ -187,37 +129,10 @@ const Testimonials = ()=>{
                             </div>
                         </li>
 
-                        {/* <li>
-                            <div className = 'each-test'>
-                                <div className = 'each-test-main'>
-                                <center><span className = 'quots'><ImQuotesLeft /></span></center>
-
-                                <div className = 'each-test-main-content'>
-                                            <div className = 'each-text-main-content-text'>
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam neque quibusdam corrupti aspernatur corporis alias nisi 
-                                            .
-                                            </div>
-                                            <div className = 'each-text-main-content-stars'>
-                                                <AiFillStar /><AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
-                                            </div>
-                                        </div>
-                                </div>
-                                <div className = 'each-test-triangle'>
-
-                                </div>
-                                <div className = 'each-test-holder'>
-                                <img src = {test1} />
-                                    <div className = 'each-test-name-area'>
-                                        <h2>JOHN DOE</h2>
-                                        <p className = 'role'>Developer</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li> */}
                     </ul>
                 </div>
             </section>
-        </section>
+        </section> */}
         <FourthPath />
         </>
     )

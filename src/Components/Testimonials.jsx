@@ -308,7 +308,10 @@ const FourthPath = ()=>{
                                     </div>
                                 </div>
 
-                                <center><br />
+                                
+                    </section>
+
+                    <center><br />
                                 <p style ={{
                                     display: "block",
                                     marginTop: "10px"
@@ -316,7 +319,6 @@ const FourthPath = ()=>{
                                         <Link to = '/blog#blog1' className = 'quote-btn-2'>Our Blog</Link>
                                 </p>
                                     </center> 
-                    </section>
             </section>
         </>
     )

@@ -112,6 +112,7 @@ footer a {
   padding: 1%;
   font-family: inherit;
   border: 0px solid white;
+  
 }
 
 body,
@@ -2087,6 +2088,15 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  /* EXTRAS */
+
+  .anim-btn-2{
+    line-height: 30px;
+  }
+
+  .quote-btn-2{
+    top: 30px;
+  }
 /* BLOG HIGHLIGHTS */
 
 .blog-highlights{
@@ -3245,7 +3255,6 @@ top: 0;
   padding: 0.5rem;
   border: 0px solid white;
   outline: none;
-  margin-top: 10px;
 }
 
 
@@ -3388,7 +3397,7 @@ footer{
   
   
   .each-blog-text-header, .ebtbb p, .ebtbb a, .each-blog-sum a{
-    font-family: "Robot-Regular"
+    font-family: "Roboto-Regular"
   }
 
   .dynamic-header-mobile ul li a{

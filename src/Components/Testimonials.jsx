@@ -311,15 +311,21 @@ const FourthPath = ()=>{
                                 
                     </section>
 
-                    <center><br />
+                    
+            </section>
+            <div className = 'page-two-highlight' style = {{
+                marginTop : "-40px"
+            }}>
+                            <center><br />
                                 <p style ={{
                                     display: "block",
-                                    marginTop: "10px"
+                                    marginTop: "5px",
+                                    marginBottom: "5px"
                                 }}>
                                         <Link to = '/blog#blog1' className = 'quote-btn-2'>Our Blog</Link>
                                 </p>
                                     </center> 
-            </section>
+            </div>
         </>
     )
 }

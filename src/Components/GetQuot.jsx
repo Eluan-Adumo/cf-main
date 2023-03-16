@@ -57,7 +57,7 @@ const GetQuot = ()=>{
 
             <section className = 'g-quote-content'>
 
-                <form action = 'https://formsubmit.co/support@carefulwatchers.co.uk' className = 'page-two-content quotations'>
+                <form method = "POST" action = 'https://formsubmit.co/support@carefulwatchers.co.uk' className = 'page-two-content quotations'>
                     <input type = 'email' name = 'email' placeholder = 'Email address' />
                     <input type = 'text' name = 'name' placeholder = 'Company name' />
 

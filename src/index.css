@@ -61,7 +61,7 @@ a{
 .hero-left-bottom,
 .hero-left-bottom,
 .hbi-content {
-  font-family: 'light';
+  font-family: 'Roboto-Light';
 }
 .hero-left-bottom{
   line-height: 25px;
@@ -73,7 +73,7 @@ footer a {
 .g-quote{
   display: block;
   float: left;
-  width: 100vw;
+  width: 100%;
   min-height: 100vw;
 }
 
@@ -127,12 +127,15 @@ body {
   background: white;
   overflow-x: hidden;
 }
-
+nav{
+  width: 100%;
+}
 .wrapper {
   display: block;
   float: left;
   width: 100%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 input,
@@ -305,7 +308,7 @@ button {
 
 .page-two {
   display: block;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   float: left;
 }
@@ -534,9 +537,9 @@ button {
 
 .fourth-page {
   display: block;
-  float: left;
+  /* float: left; */
   width: 100%;
-  min-height: 100%;
+  /* min-height: 100%; */
   background-image: linear-gradient(
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1)
@@ -752,7 +755,7 @@ footer {
   color: lightgrey;
   font-size: 80%;
   font-weight: normal;
-  font-family: 'light';
+  font-family: 'Roboto-Light';
 }
 
 .each-card-content {
@@ -1625,7 +1628,7 @@ footer {
     align-items: center;
     grid-template-columns: 65% 10%;
     column-gap: 25%;
-    width: 100vw;
+    width: 100%;
     height: 60px;
     position: relative;
     margin-top: 0px;
@@ -1716,7 +1719,7 @@ footer {
   .hero {
     display: block;
     float: left;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     padding-bottom: 3%;
     background: url('resources/images/hero-bg.jpg');
@@ -2544,7 +2547,7 @@ top: 0;
     background: #25245e;
     padding-top: 2%;
     padding-bottom: 0%;
-    width: 100vw;
+    width: 100%;
     top: 0px;
     z-index: 1000;
     margin-top: -60px;
@@ -2701,7 +2704,7 @@ top: 0;
   .small-header {
     display: block;
     float: left;
-    width: 100vw;
+    width: 100%;
     min-height: 50px;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -2758,7 +2761,7 @@ top: 0;
   }
   .bigger-header {
     display: grid;
-    width: 100vw;
+    width: 100%;
     grid-template-columns: 80% 20%;
     row-gap: 15%;
     background: #25245e;
@@ -2799,7 +2802,7 @@ top: 0;
   .hero {
     display: block;
     float: left;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     padding-bottom: 3%;
     background: url('resources/images/hero-bg.jpg');
@@ -3068,7 +3071,7 @@ top: 0;
 
   .dark-div-right .text-side p {
     line-height: 30px;
-    font-family: 'light';
+    font-family: 'Roboto-Light';
     text-align: center;
   }
   .dd-scrolls {
@@ -3276,7 +3279,7 @@ top: 0;
 
 .pop-up{
   display: block;
-  width: 100vw;
+  width: 100%;
   margin: 0px auto;
   height: 100vh;
   overflow-y: scroll;

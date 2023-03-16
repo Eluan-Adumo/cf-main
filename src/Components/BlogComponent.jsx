@@ -25,13 +25,15 @@ const BlogComponent = (props) =>{
            
            <section className = 'blog-frame'>
             <section className = 'blog-blog'>
-                
-                      <BlogSoup /> 
-                
-                
+
+                      <BlogSoup editable = {props.editable} /> 
             </section>
             <section className = 'blog-highlights'>
-            <h1>Highlights</h1>
+                <center><p className = 'link-btn'>More from us</p></center>
+                <section className="blog-h-content">
+                <BlogHighlights />
+                </section>
+            
             </section>
            </section>
 
@@ -112,7 +114,7 @@ return (
 
 
 
-const BlogSoup = () =>{
+const BlogSoup = (props) =>{
     const date = new Date().toDateString();
     const blogData = [{
         title : 'Cyber Security for Businesses',
@@ -284,6 +286,15 @@ const articleContent = feedBack.map(item=>{
                         <h1>{artTitle}</h1>
                         <div className = 'ebtbb'>
                             {artContent}
+
+                            {
+                                props.editable
+                                &&
+                                <p>
+                                    <br />
+                                    <input type = 'button' value = 'Delete' className = 'act-btn' />
+                                </p>
+                            }
                         </div>
                     </div>
                 </div>
@@ -335,4 +346,53 @@ return (
 );
 }
 
+
+
+function BlogHighlights(){
+    const [highlights, setHighlights] = useState([]);
+
+    const fetchHighlights= async()=>{
+        const url = "http://localhost:1337/api/fetch-highlights";
+
+        await axios.get(url).then((response)=>{
+            setHighlights(response.data);
+        });
+        
+    }
+    const bHighlights = highlights.map(item=>{
+        const artTitle = item.articleTitle;
+        const artContent = item.articleContent.slice(0, 100);
+        const artImage = item.articlePhoto;
+        const dateU = item.dateUploaded;
+
+
+        return<>
+            <div className = 'each-highlight'>
+                <div className = 'highlight-image-side' style = {{
+                    backgroundImage : `url(${artImage})`
+                }}>
+
+                </div>
+                <div className = 'highlight-text-side'>
+                    <div className = 'highlight-text-side-content'>
+                        <h3>{artTitle}</h3>
+                        <p>
+                        {artContent}
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </>
+    });
+    useEffect(()=>{
+        fetchHighlights();
+    }, [])
+
+    return(
+        <>
+            {bHighlights}
+        </>
+    );
+}
 export default BlogComponent

@@ -3,6 +3,7 @@ import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import Footer from "../Components/Footer";
 import SmallHero from "../Components/SmallHero";
+import Spinner from "../Components/Spinner";
 
 
 const Register = ()=>{
@@ -10,6 +11,7 @@ const Register = ()=>{
     lastName : "",
     email: "", password : ""});
     const [defaultState, setDefaultState] = useState("Register");
+    const [isLoading, setLoading] = useState(false);
 
     const navigate = useNavigate();
     useEffect(()=>{
@@ -26,6 +28,29 @@ const Register = ()=>{
         setFormInfo({...formInfo, [e.target.name] : e.target.value});
     }
 
+    async function handleLogin(e){
+        e.preventDefault();
+        if(formInfo.email === "" || formInfo.password === ""){
+            alert("Please Enter correct values");
+        }else{
+            setLoading(true);
+
+            const url = "http://localhost:1337/api/login-user";
+
+            const checkData = {
+                emailField : formInfo.email,
+                passwrodField : formInfo.password
+            }
+            await axios.post(url, {checkData}).then(function(response){
+                if(response !== "null"){
+                    console.log(response);
+                }else{
+                    alert("Your Login information is not correct, please re-check");
+                }
+            });
+        }
+
+    }
     async function handleSubmit(e){
         e.preventDefault();
         console.log(formInfo);
@@ -40,6 +65,12 @@ const Register = ()=>{
             signupName : userName
         };
 
+        if(formInfo.firstName === "" || formInfo.lastName === "" || formInfo.email === "" || formInfo.password === ""){
+            alert("Please fill out all fields")
+        }else{
+
+        setLoading(true);
+
         await axios.post("http://localhost:1337/api/register", {data}).then((response)=>{
             // response.data.status == "ok" ? localStorage.setItem("userInfo", formD): console.log(response);
             if(response.data.status == "ok"){
@@ -50,6 +81,7 @@ const Register = ()=>{
                 console.log(response);
             }
         });
+    }
     }
 
     return defaultState == "Register"? (
@@ -69,13 +101,25 @@ const Register = ()=>{
                 <input type = 'text'  onChange={setFD} placeholder="Last Name" name = 'lastName' value = {formInfo.lastName} />
                 <input type = 'email'  onChange={setFD} placeholder = 'Email Address' name = 'email' value = {formInfo.email} />
                 <input type = 'password' onChange={setFD}  placeholder="Password" name = 'password' value = {formInfo.password} />
-                <input type = 'submit' value = 'Register' className = 'anim-btn' />
+                <button type = 'submit' className = 'anim-btn'>
+                Register
+                {
+                    isLoading
+                    &&
+                    <Spinner />
+                }
+                    </button>
             </form>
 
+            <br />
+
                 <center>
+                    <p>
+                        <h3>OR</h3>
+                    </p>
                     <input type = 'button' Value = 'Login' onClick = {()=>{
                         setDefaultState("Login");
-                    }} />
+                    }} className = 'link-btn' />
                 </center>
             </section>
 
@@ -96,17 +140,24 @@ const Register = ()=>{
             </div>
 
         
-            <form className = 'signup-form' action = '' method = 'post' onSubmit = {handleSubmit}>
+            <form className = 'signup-form' action = '' method = 'post' onSubmit = {handleLogin}>
 
                 <input type = 'email'  onChange={setFD} placeholder = 'Email Address' name = 'email' value = {formInfo.email} />
                 <input type = 'password' onChange={setFD}  placeholder="Password" name = 'password' value = {formInfo.password} />
-                <input type = 'submit' value = 'Login' className = 'anim-btn' />
+                <button type = 'submit' className = 'anim-btn'>
+
+                        Login {isLoading && <Spinner />}
+                    </button>
             </form>
 
+                <br />
                 <center>
+                    <p>
+                        <h3>OR</h3>
+                    </p>
                     <input type = 'button' Value = 'Register' onClick = {()=>{
                         setDefaultState("Register");
-                    }} />
+                    }} className = 'link-btn' />
                 </center>
             </section>
 

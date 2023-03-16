@@ -8,10 +8,21 @@ const BlogPage = () =>{
 
         <>
             <SmallHero title = 'Blog' />
-            <BlogComponent blogType = "detail" />
+            <BlogComponent blogType = "detail" editable = {false} />
             <Footer />
         </>
     )
 }
 
-export default BlogPage
+
+const BlogPageAdmin = () =>{
+
+    return(
+        <>
+        <BlogComponent blogType = "detail" editable = {true} />
+        </>
+        
+    )
+    
+}
+export  {BlogPage, BlogPageAdmin}

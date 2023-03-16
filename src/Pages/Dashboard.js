@@ -7,8 +7,9 @@ import Spinner from "../Components/Spinner";
 import Footer from "../Components/Footer";
 import axios from "axios";
 import {Link} from "react-router-dom";
+import { BlogPageAdmin } from "./BlogPage";
 
-export default function Dashboard(){
+ function Dashboard(){
     const nav = useNavigate();
     const [userInfo, setUserInfo] = useState({
         userName : "",
@@ -43,6 +44,21 @@ export default function Dashboard(){
 
 }
 
+
+const BlogAdminView =()=>{
+    return(
+        <>
+        <SmallHero title = "Dashboard"/>
+        <section className = 'dashboard'>
+            <DashboardNavigation />
+            <div className = 'dashboard-right'>
+                    <BlogPageAdmin />
+            </div>
+        </section>
+        <Footer />
+        </>
+    );
+}
 
 function DashboardUploadArea(){
     const [sendingItems, setSendingItems] = useState({articleTitle : "", articleContent : "", imageToSend : null});
@@ -87,12 +103,17 @@ function DashboardUploadArea(){
             content: sendingItems.articleContent
         };
 
+        if(sendingItems.articleContent === "" || sendingItems.articleTitle === "" || sendingItems.imageToSend === null){
+                console.log("Invalid values");
+        }else{
+            setIsLoading(true);
+            await axios.post("http://localhost:1337/api/multer-photo-upload", fd).then(function(response){
+                console.log(response);
+                setIsLoading(false);
+            });
+        }
 
-        setIsLoading(true);
-        await axios.post("http://localhost:1337/api/multer-photo-upload", fd).then(function(response){
-            console.log(response);
-            setIsLoading(false);
-        });
+        
         // console.log(data);
     }
     return(
@@ -135,18 +156,27 @@ function DashboardUploadArea(){
 
 function DashboardNavigation(){
 
+    const nav = useNavigate();
+    function signoutUser(){
+        localStorage.removeItem("UserName");
+        localStorage.removeItem("UserEmail");
+        nav("/accounts");
+    }
     return(
         <>
                     <div className = 'dashboard-left'>
                 <ul>
                     <li>
-                       <Link to= '/blog'>Articles</Link> 
+                       <Link to= '/admin-blog'>Articles</Link> 
                     </li>
                     <li>
                         Messages
                     </li>
                     <li>
-                        Upload
+                        <Link to = '/dashboard'>Upload</Link>
+                    </li>
+                    <li onClick={signoutUser}>
+                        Logout
                     </li>
                 </ul>
             </div>
@@ -163,3 +193,7 @@ function DashboardNavigation(){
 //         </>
 //     );
 // }
+
+
+
+export {Dashboard, BlogAdminView};

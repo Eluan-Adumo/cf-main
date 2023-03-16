@@ -109,6 +109,8 @@ function DashboardUploadArea(){
             setIsLoading(true);
             await axios.post("http://localhost:1337/api/multer-photo-upload", fd).then(function(response){
                 console.log(response);
+                setSendingItems({articleTitle : "", articleContent : "", imageToSend : null});
+                setImagePreview(null);
                 setIsLoading(false);
             });
         }
@@ -119,9 +121,9 @@ function DashboardUploadArea(){
     return(
         <>
     <form action = '' name = 'upload-article-form' onSubmit={submitArticle} className = 'upload-form'>
-        <input type = 'text' placeholder = 'Article Title' name = 'articleTitle' className = 'art-title' onChange = {setUploadItems}/>
+        <input type = 'text' value = {sendingItems.articleTitle} placeholder = 'Article Title' name = 'articleTitle' className = 'art-title' onChange = {setUploadItems}/>
     <br />
-        <textarea placeholder = 'Article Content' name = 'articleContent' className = 'art-content' onChange = {setUploadItems}></textarea>
+        <textarea placeholder = 'Article Content' value = {sendingItems.articleContent} name = 'articleContent' className = 'art-content' onChange = {setUploadItems}></textarea>
     <br />
 
         <div className='image-preview'>

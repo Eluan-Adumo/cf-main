@@ -37,16 +37,25 @@ const Register = ()=>{
 
             const url = "http://localhost:1337/api/login-user";
 
-            const checkData = {
+            const data = {
                 emailField : formInfo.email,
-                passwrodField : formInfo.password
+                passwordField : formInfo.password
             }
-            await axios.post(url, {checkData}).then(function(response){
+            await axios.post(url, {data}).then(function(response){
                 if(response !== "null"){
-                    console.log(response);
-                }else{
+                    console.log(response.data);
+                    localStorage.setItem("UserName", response.data.name);
+                    localStorage.setItem("UserEmail", response.data.email);
+                    navigate("/dashboard");
+                    setLoading(false);
+                }
+                else{
+
+                    setLoading(false);
                     alert("Your Login information is not correct, please re-check");
                 }
+
+                console.log(response);
             });
         }
 
@@ -117,7 +126,7 @@ const Register = ()=>{
                     <p>
                         <h3>OR</h3>
                     </p>
-                    <input type = 'button' Value = 'Login' onClick = {()=>{
+                    <input type = 'button' value = 'Login' onClick = {()=>{
                         setDefaultState("Login");
                     }} className = 'link-btn' />
                 </center>
@@ -155,7 +164,7 @@ const Register = ()=>{
                     <p>
                         <h3>OR</h3>
                     </p>
-                    <input type = 'button' Value = 'Register' onClick = {()=>{
+                    <input type = 'button' value = 'Register' onClick = {()=>{
                         setDefaultState("Register");
                     }} className = 'link-btn' />
                 </center>

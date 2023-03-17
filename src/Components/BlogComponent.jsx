@@ -59,7 +59,7 @@ useEffect(()=>{
 async function fetchArticles(){
 
     
-    await axios.get("http://localhost:1337/api/fetch-records").then(function(response){
+    await axios.get("http://localhost:1337/api/fetch-records-front").then(function(response){
         setFeedBack(response.data);
         setLoading(false);
 

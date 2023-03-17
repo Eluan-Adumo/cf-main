@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useState, useRef} from "react";
 import SmallHero from "./SmallHero";
 import Footer from "./Footer";
 import blog1 from "../resources/images/blog1.png";
@@ -6,7 +6,7 @@ import blog2 from "../resources/images/blog2.png";
 import blog3 from "../resources/images/blog3.jpg";
 import axios from "axios";
 import Spinner from "./Spinner";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // import BlogComponent from "../Components/BlogComponent";
 
@@ -116,6 +116,7 @@ return (
 
 const BlogSoup = (props) =>{
     const date = new Date().toDateString();
+    const nav = useNavigate();
     const blogData = [{
         title : 'Cyber Security for Businesses',
         date : date,
@@ -237,15 +238,34 @@ human error, and better protect their sensitive data from cybercriminals.
     that they can focus on running their business, rather than worrying about security threats.`,
     image: blog3        
 }]
+
 const [feedBack, setFeedBack] = useState([]);
 const [loading, setLoading] = useState(true);
 const [loadNet, setLoadNet] = useState("loader");
+const [currentItem, setCurrentItem] = useState(null);
+const buttonRef = useRef();
 useEffect(()=>{
     setTimeout(()=>{
         fetchArticles();
     }, 10000);
+
+    // deleteBlogPost();
     
-})
+}, [currentItem]);
+
+const deleteBlogPost = async(e)=>{
+    e.target.parentElement.parentElement.parentElement.parentElement.parentElement.innerHTML = "";
+    let curItem = e.target.getAttribute("data-id");
+    // document.querySelector("#"+currentItem).innerHTML(<Spinner />);
+    await axios.get("http://localhost:1337/api/delete-record/"+curItem).then((response)=>{
+        console.log(response);
+        if(response.data.indexOf("deleted")>=0){
+        nav("/admin-blog")
+        }else{
+            alert("Something went wrong, please try again");
+        }
+    });
+};
 async function fetchArticles(){
 
     
@@ -263,11 +283,12 @@ const articleContent = feedBack.map(item=>{
     const artContent = item.articleContent;
     const artImage = item.articlePhoto;
     const dateU = item.dateUploaded;
+    const itemId = item._id;
 
     return<>
 
    
-            <div className = 'each-blog'>
+            <div className = 'each-blog' key = {itemId}>
                 <div className = 'each-blog-image-area' style = {{
                     height: "300px",
                     backgroundSize: "cover",
@@ -292,7 +313,9 @@ const articleContent = feedBack.map(item=>{
                                 &&
                                 <p>
                                     <br />
-                                    <input type = 'button' value = 'Delete' className = 'act-btn' />
+                                    <button type = 'button' className = 'act-btn' data-id = {itemId} onClick = {deleteBlogPost} ref = {buttonRef}>
+                                        Delete
+                                        </button>
                                 </p>
                             }
                         </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { SmallHeader, BiggerHeader } from '../Components/Headers';
 import Footer from '../Components/Footer';
 import SmallHero from '../Components/SmallHero';
@@ -6,10 +6,45 @@ import { BiLocationPlus } from 'react-icons/bi';
 import { ImQuotesLeft } from 'react-icons/im';
 import { AiFillStar } from 'react-icons/ai';
 import test1 from '../resources/images/client1-1-1-1-1.jpg';
+import axios from 'axios';
+
 
 // IMAGES
 
 const Contact = () => {
+  const [messageState, setMessageState] = useState({ uName : "", uEmail : "", uNumber : "", uMessage : ""});
+
+  async function sendMsg(e){
+    e.preventDefault();
+    const m = messageState;
+    if(m.uName === "" || m.uEmail === "" || m.uNumber === "" || m.uMessage === ""){
+      alert("All fields are required");
+    }else{
+      const data = {
+        userName : m.uName,
+        userEmail : m.uEmail,
+        userMessage : m.uMessage,
+        userPhone : m.uNumber
+      };
+
+
+      try{
+        console.log(data);
+        await axios.post("http://localhost:1337/api/submit-form", {data}).then((response)=>{
+          if(response.data === "success"){
+              setMessageState({ uName : "", uEmail : "", uNumber : "", uMessage : ""});
+          }else{
+            console.log(response);
+          }
+        });
+      }catch(err){
+        console.log(err);
+      }
+    }
+  }
+  const handleChange = (e)=>{
+    setMessageState({...messageState, [e.target.name] : e.target.value});
+  }
   return (
     <>
       <SmallHero title='Contact Us' />
@@ -94,14 +129,14 @@ const Contact = () => {
           </p>
         </div>
         <section className='contact-lower'>
-          <div className='cl-content'>
+          <form className='cl-content' action = '' onSubmit = {sendMsg}>
             <div className='c11'>
-              <input type='text' placeholder='Your Name' className='u-name' />
-              <input type='text' placeholder='Your Email' className='u-mail' />
+              <input type='text' onChange = {handleChange} placeholder='Your Name' className='u-name'  name = 'uName' value = {messageState.uName}/>
+              <input type='text' onChange = {handleChange} placeholder='Your Email' className='u-mail' name = 'uEmail' value = {messageState.uEmail}/>
             </div>
 
             <div className='c12'>
-              <input type='text' placeholder='Your Number' className='u-name' />
+              <input type='text' onChange = {handleChange} placeholder='Your Number' className='u-name' name = 'uNumber' value = {messageState.uNumber}/>
               <input
                 type='text'
                 placeholder='Your Subject'
@@ -110,7 +145,7 @@ const Contact = () => {
             </div>
 
             <div className='c13'>
-              <textarea placeholder='Your Message'></textarea>
+              <textarea onChange = {handleChange} placeholder='Your Message' name = 'uMessage' value = {messageState.uMessage}></textarea>
             </div>
 
             <div className='c14'>
@@ -118,10 +153,10 @@ const Contact = () => {
             </div>
             <div className='c15'>
               <center>
-                <button className='anim-btn'>Send Message</button>
+                <button className='anim-btn' type = 'submit'>Send Message</button>
               </center>
             </div>
-          </div>
+          </form>
         </section>
       </section>
       <Footer />
